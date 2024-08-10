@@ -1,0 +1,58 @@
+name: CTLeeLab Research
+description:  Research brought to you by the ctleelab at the University of California San Diego
+url: http://labs.biology.ucsd.edu/ctlee
+
+markdown: kramdown
+permalink: /:categories/:title/
+future: true
+sass:
+  sass_dir: css
+
+plugins:
+  - jekyll-gzip
+  - jekyll-twitter-plugin
+
+gzip:
+  replace_files: true
+
+exclude:
+  - "*.branches"
+  - "*.class"
+  - "*.cpp"
+  - "*.csv"
+  - "*.fasta"
+  - "*.gz"
+  - "*.h"
+  - "*.hh"
+  - "*.ipynb"
+  - "*.jar"
+  - "*.java"
+  - "*.kml"
+  - "*.log"
+  - "*.mcc"
+  - "*.nb"
+  - "*.newick"
+  - "*.nex"
+  - "*.py"
+  - "*.R"
+  - "*.rb"
+  - "*.Rmd"
+  - "*.tiff"
+  - "*.tips"
+  - "*.trees"
+  - "*.tsv"
+  - "*.txt"
+  - "*.xml"
+  - "*.zip"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+readmes:
+  - ctlee/casc
+  - ctlee/gamer
+  - ctlee/membrane-spectral-analysis
+  - RangamaniLabUCSD/Mem3DG
+  - RangamaniLabUCSD/ActuAtorForceEstimation
+
+projects:
+  

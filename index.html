@@ -1,0 +1,215 @@
+---
+layout: default
+title: ctleelab
+categories:
+- home
+---
+
+<div class="row">
+	<div class="col-lg-12">
+		<object class="pull-left biglogo" data="{{ '/images/logo.svg' | relative_url }}" type="image/svg+xml"></object>
+		<div class="bigtitle logobox">
+			ctleelab research
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-5">
+		<div class="smallhead">
+			<p>
+
+				The CTLee Lab at <a class="off" href="https://biology.ucsd.edu/">UC San Diego</a> develops multiscale
+				physical models which bring to life biological scenes at the subcellular and cellular scales. We are
+				interested in structure--function relationships, such as how chemically detailed membrane-protein
+				interactions generate forces to deform membranes leading to familiar cell shapes (e.g., the folded
+				cristae of mitochondria). We hope to explain the biophysics behind the numerous correlations between
+				cell shape and disease.
+			</p>		
+		</div>
+	</div>
+	<div class="col-lg-7">
+		<img width="600px" src="{{ '/images/overview.webp' | relative_url }}" class="img-fluid" alt="ctleelab research overview">
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="head">
+			<a class="off" href="{{ '/blog/' | relative_url }}">Recent posts</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for post in site.categories.blog limit:4 %}
+
+	{% for member in site.categories.team %}
+	{% if member.title == post.author %}
+	{% assign author = member %}
+	{% endif %}
+	{% endfor %}
+
+	<div class="col-lg-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-comment-o fa-fw"></i>
+				<a class="off" href="{{ post.url | relative_url  }}">
+					{{ post.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ post.date | date: "%-d %b %Y" }}
+				{% if post.author %}
+				by <a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.title == post.author %}
+              {{ member.url | relative_url }}
+            {% endif %}
+          {% endfor %}
+        ">
+					{{ post.author }}
+				</a>
+				{% endif %}
+				{% if post.authors %}
+				by
+				<a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.title == post.authors.first %}
+              {{ member.url | relative_url }}
+            {% endif %}
+          {% endfor %}
+        ">
+					{{ post.authors.first }}
+				</a>
+				and
+				<a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.title == post.authors.last %}
+              {{ member.url | relative_url }}
+            {% endif %}
+          {% endfor %}
+        ">
+					{{ post.authors.last }}
+				</a>
+				{% endif %}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="head">
+			<a class="off" href="{{ '/papers/' | relative_url }}">Recent papers</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for paper in site.categories.papers limit:4 %}
+	<div class="col-lg-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="{{ paper.url | relative_url }}">
+					{{ paper.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ paper.date | date: "%-d %b %Y" }}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="head">
+			<a class="off" href="{{ '/projects/' | relative_url }}">Active projects</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for project in site.data.projects limit:4 %}
+	<div class="col-lg-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-edit fa-fw"></i>
+				<a class="off" href="{{ project.url | relative_url }}">
+					{{ project.title }} - {{ project.description }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="{{ project.commits.first.url }}">
+					{{ project.commits.first.date | date: "%-d %b %Y" }}
+				</a>
+				by
+				<a class="off" href="{{ project.commits.first.author_url }}">
+					{{ project.commits.first.author_login }}
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="head">
+			Misc
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12 reduced-gutter">
+		<div class="pad-left">
+			<ul class="list-inline">
+				{% for page in site.categories.misc %}
+				<li class="footernav list-inline-item">
+					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="float-lg-right" style="vertical-align: bottom; display: table-cell;">
+			<a class="off" href="https://biology.ucsd.edu/">
+				<img width=300 src="{{ '/images/logos/logo_ucsd_mb_black.jpg' | relative_url }}" alt="UCSD molecular biology logo">
+			</a>
+		</div>
+	</div>
+</div>
