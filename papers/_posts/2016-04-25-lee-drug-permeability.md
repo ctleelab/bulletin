@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Simulation-Based Approaches for Determining Membrane Permeability of Small Compounds'
-image: 
 authors: 'C. T. Lee, J. Comer<sup>$</sup>, C. Herndon, N. Leung, A. Pavlova, R. V. Swift, C. Tung, C. N. Rowley, R. E. Amaro<sup>$</sup>, C. Chipot<sup>$</sup>, Y. Wang<sup>$</sup>, and J. C. Gumbart<sup>$</sup>'
 
 journal: 'J. Chem. Inf. Model.'
 doi: 10.1021/acs.jcim.6b00022
 shortcite: Lee et al., 2016 J. Chem. Inf. Model.
 citation: '56.4 (April 2016), pp. 721--733'
+
+image: 
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

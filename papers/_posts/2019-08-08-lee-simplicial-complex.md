@@ -1,7 +1,6 @@
 ---
 layout: paper
 title: 'The Implementation of the Colored Abstract Simplicial Complex and Its Application to Mesh Generation'
-image: 
 authors: 'C. T. Lee<sup>*</sup><sup>$</sup>, J. B. Moody<sup>*</sup>, R. E. Amaro, J. A. Mccammon, and M. J. Holst'
 
 journal: 'ACM Trans. Math. Softw.'
@@ -9,11 +8,15 @@ doi: 10.1145/3321515
 shortcite: Lee et al., 2019 ACM Trans. Math. Softw.
 citation: '45.3 (August 2019), pp. 1--20'
 
+image: lee-casc.png
+pdf: 
+supplement: 
+
 biorxiv: 
 arxiv: 1807.01417
 chemrxiv: 
 
-github: 
+github: ctlee/casc
 zenodo: 
 
 date: 2019-08-08

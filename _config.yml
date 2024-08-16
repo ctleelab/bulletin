@@ -48,11 +48,24 @@ exclude:
   - "Gemfile.lock"
 
 readmes:
-  - ctlee/casc
-  - ctlee/gamer
-  - ctlee/membrane-spectral-analysis
-  - RangamaniLabUCSD/Mem3DG
-  - RangamaniLabUCSD/ActuAtorForceEstimation
+  - 
+    repo: ctlee/casc
+    branch: main
+  - 
+    repo: ctlee/gamer
+    branch: main
+  - 
+    repo: ctlee/membrane-spectral-analysis
+    branch: main
+  - 
+    repo: RangamaniLabUCSD/Mem3DG
+    branch: main
+  - 
+    repo: RangamaniLabUCSD/ActuAtorForceEstimation
+    branch: main
+  - 
+    repo: RangamaniLabUCSD/smart
+    branch: development
 
 projects:
   

@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Exascale Computing: A New Dawn for Computational Biology'
-image: 
 authors: 'C. T. Lee, and R. E. Amaro<sup>$</sup>'
 
 journal: 'Comput. Sci. Eng.'
 doi: 10.1109/MCSE.2018.05329812
 shortcite: Lee et al., 2018 Comput. Sci. Eng.
 citation: '20 (August 2018), pp. 18--25'
+
+image: 
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Emerging Computational Methods for the Rational Discovery of Allosteric Drugs'
-image: 
 authors: 'J. R. Wagner<sup>*</sup>, C. T. Lee<sup>*</sup>, J. D. Durrant, R. D. Malmstrom, V. A. Feher, and R. E. Amaro<sup>$</sup>'
 
 journal: 'Chem. Rev.'
 doi: 10.1021/acs.chemrev.5b00631
 shortcite: Wagner et al., 2016 Chem. Rev.
 citation: '116.11 (June 2016), pp. 6370--6390'
+
+image: 
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

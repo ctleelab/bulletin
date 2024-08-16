@@ -1,7 +1,6 @@
 ---
 layout: paper
 title: 'Spatial Modeling Algorithms for Reactions and Transport (SMART) in Biological Cells'
-image: 
 authors: 'E. A. Francis<sup>*</sup>, J. Laughlin<sup>*</sup>, J. S. Dokken, H. Finsberg, C. T. Lee, M. E. Rognes<sup>$</sup>, and P. Rangamani<sup>$</sup>'
 
 journal: 'unpublished'
@@ -9,12 +8,16 @@ doi:
 shortcite: Francis et al., 2024 unpublished
 citation: 
 
+image: francis-spatial-modeling.png
+pdf: 
+supplement: 
+
 biorxiv: 10.1101/2024.05.23.595604
 arxiv: 
 chemrxiv: 
 
-github: 
-zenodo: 
+github: RangamaniLabUCSD/smart
+zenodo: 10.5281/zenodo.10019464
 
 date: 2024-05-25
 

@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Spatiotemporal Modelling Reveals Geometric Dependence of AMPAR Dynamics on Dendritic Spine Morphology'
-image: 
 authors: 'M. K. Bell, C. T. Lee, and P. Rangamani<sup>$</sup>'
 
 journal: 'The Journal of Physiology'
 doi: 10.1113/JP283407
 shortcite: Bell et al., 2022 The Journal of Physiology
 citation: '601.15 (November 2022), pp. 3329--3350'
+
+image: bell-ampar-pde.png
+pdf: 
+supplement: 
 
 biorxiv: 10.1101/2022.05.31.494202
 arxiv: 

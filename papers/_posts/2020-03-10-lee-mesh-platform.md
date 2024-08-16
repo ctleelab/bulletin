@@ -1,7 +1,6 @@
 ---
 layout: paper
 title: 'An Open Source Mesh Generation Platform for Biophysical Modeling Using Realistic Cellular Geometries'
-image: 
 authors: 'C. T. Lee<sup>$</sup>, J. G. Laughlin, J. B. Moody, R. E. Amaro, J. A. McCammon, M. J. Holst, and P. Rangamani<sup>$</sup>'
 
 journal: 'Biophys. J.'
@@ -9,11 +8,15 @@ doi: 10.1016/j.bpj.2019.11.3400
 shortcite: Lee et al., 2020 Biophys. J.
 citation: '118.5 (March 2020), pp. 1003--1008'
 
+image: lee-mesh-platform.png
+pdf: 
+supplement: 
+
 biorxiv: 10.1101/765453
 arxiv: 1909.04781
 chemrxiv: 
 
-github: 
+github: ctlee/gamer
 zenodo: 
 
 date: 2020-03-10

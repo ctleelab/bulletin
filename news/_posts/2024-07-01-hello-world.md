@@ -6,4 +6,4 @@ image:
 link:
 ---
 
-Hello World! 
+Hello World! The CTLee Lab starts in the Department of Molecular Biology at UCSD.

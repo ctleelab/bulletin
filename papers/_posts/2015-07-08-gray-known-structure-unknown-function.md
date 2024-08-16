@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Known Structure, Unknown Function: An Inquiry-Based Undergraduate Biochemistry Laboratory Course'
-image: 
 authors: 'C. Gray<sup>*</sup>, C. W. Price<sup>*</sup>, C. T. Lee, A. H. Dewald, M. A. Cline, C. E. McAnany, L. Columbus<sup>$</sup>, and C. Mura<sup>$</sup>'
 
 journal: 'Biochem. Mol. Biol. Educ.'
 doi: 10.1002/bmb.20873
 shortcite: Gray et al., 2015 Biochem. Mol. Biol. Educ.
 citation: '43.4 (July 2015), pp. 245--262'
+
+image: 
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

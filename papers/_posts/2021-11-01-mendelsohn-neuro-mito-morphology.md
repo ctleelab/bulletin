@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Morphological Principles of Neuronal Mitochondria'
-image: 
 authors: 'R. Mendelsohn<sup>*</sup>, G. C. Garcia<sup>*</sup>, T. M. Bartol, C. T. Lee, P. Khandelwal, E. Liu, D. J. Spencer, A. Husar, E. A. Bushong, S. Phan, G. Perkins, M. H. Ellisman, A. Skupin, T. J. Sejnowski<sup>$</sup>, and P. Rangamani<sup>$</sup>'
 
 journal: 'J. Comp. Neurol.'
 doi: 10.1002/cne.25254
 shortcite: Mendelsohn et al., 2021 J. Comp. Neurol.
 citation: '530.6 (November 2021), pp. 886--902'
+
+image: mendelsohn-neuro-mito.png
+pdf: 
+supplement: 
 
 biorxiv: 10.1101/2021.03.15.435547
 arxiv: 

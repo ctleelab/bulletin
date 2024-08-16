@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Biophysical modeling of synaptic plasticity'
-image: 
 authors: 'C. T. Lee, M. Bell, M. Bonilla-Quintana, and P. Rangamani<sup>$</sup>'
 
 journal: 'Annual Review of Biophysics'
 doi: 10.1146/annurev-biophys-072123-124954
 shortcite: Lee et al., 2024 Annual Review of Biophysics
 citation: '53.1 (February 2024)'
+
+image: lee-synaptic-plasticity.png
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

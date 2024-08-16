@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Value of Models for Membrane Budding'
-image: 
 authors: 'C. T. Lee, M. Akamatsu, and P. Rangamani<sup>$</sup>'
 
 journal: 'Curr. Opin. Cell Biol.'
 doi: 10.1016/j.ceb.2021.01.011
 shortcite: Lee et al., 2021 Curr. Opin. Cell Biol.
 citation: '71 (August 2021), pp. 38--45'
+
+image: lee-value-models.png
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

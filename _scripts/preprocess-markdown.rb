@@ -7,17 +7,23 @@ $basedir = Dir.pwd
 
 # collect mapping of project name to repo via _config.yml
 name_to_repo = Hash.new
+repo_to_branch = Hash.new
+
 config = YAML.load_file("_config.yml")
 # (config["projects"] + config["readmes"]).each do |repo|
-config["readmes"].each do |repo|
+config["readmes"].each do |repometa|
+	repo = repometa["repo"]
+    branch = repometa["branch"]
 	name = repo.split('/').drop(1).join('')
 	name_to_repo[name] = repo
+	repo_to_branch[repo] = branch
 end
 
 # mark projects that are only readmes
 name_to_readme = Hash.new
 config = YAML.load_file("_config.yml")
-config["readmes"].each do |repo|
+config["readmes"].each do |repometa|
+	repo = repometa["repo"]
 	name = repo.split('/').drop(1).join('')
 	name_to_readme[name] = true
 end
@@ -53,6 +59,7 @@ mdarray.each { |md|
 	print("#{project_name}\n")
 
 	repo = name_to_repo[project_name]
+	branch = repo_to_branch[repo]
 	within_project_directory = full_directory[/projects\/#{project_name}\/(.*)/, 1]
 
 	print("#{repo}\n")
@@ -81,13 +88,13 @@ mdarray.each { |md|
 	# go through file and replace all links that point to source code files with equivalent GitHub links
 	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
 	filetypes.each {|filetype|
-		contents.gsub!(/\((\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/main/#{within_project_directory}\\1.#{filetype})")
+		contents.gsub!(/\((\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1.#{filetype})")
 	}
 
 	# if readme, replace all internal links with GitHub links
 	if name_to_readme[project_name]
 		# catching links that end in "/"
-		contents.gsub!(/\((?!http)(\S+\/)\)/, "(https://github.com/#{repo}/tree/main/#{within_project_directory}\\1)")
+		contents.gsub!(/\((?!http)(\S+\/)\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1)")
 	end
 
 	out.puts contents

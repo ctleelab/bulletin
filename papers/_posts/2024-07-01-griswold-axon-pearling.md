@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Membrane mechanics dictate axonal morphology and function'
-image: 
 authors: 'J. M. Griswold, M. Bonilla-Quintana<sup>*</sup>, R. Pepper<sup>*</sup>, C. T. Lee<sup>*</sup>, S. Raychaudhuri, S. Ma, Q. Gan, S. Syed, C. Zhu, M. Bell, M. Suga, Y. Yamaguchi, U. V. Nägerl, G. Knott, P. Rangamani<sup>$</sup>, and S. Watanabe<sup>$</sup>'
 
 journal: 'unpublished'
 doi: 
 shortcite: Griswold et al., 2024 unpublished
 citation: 
+
+image: griswold-axon-pearling.png
+pdf: 
+supplement: 
 
 biorxiv: 10.1101/2023.07.20.549958
 arxiv: 

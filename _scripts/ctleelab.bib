@@ -4,6 +4,7 @@
 @article{francis-spatial-modeling,
     entrysubtype={unpublished},
     pubstate = {Submitted},
+    shorthand = {-},
 
     title = {Spatial Modeling Algorithms for Reactions and Transport ({{SMART}}) in Biological Cells},
     author = {Francis, Emmet A. and Laughlin, Justin and Dokken, Jørgen S. and Finsberg, Henrik and Lee, Christopher T. and Rognes, Marie E. and Rangamani, Padmini},
@@ -16,10 +17,15 @@
     pages = {},
     issn = {},
     doi = {},
+
     abstract = {Biological cells rely on precise spatiotemporal coordination of biochemical reactions to control their many functions. Such cell signaling networks have been a common focus for mathematical models, but they remain challenging to simulate, particularly in realistic cell geometries. Herein, we present our software, Spatial Modeling Algorithms for Reaction and Transport (SMART), a package that takes in high-level user specifications about cell signaling networks and molecular transport, and then assembles and solves the associated mathematical and computational systems. SMART uses state-of-the-art finite element analysis, via the FEniCS Project software, to efficiently and accurately resolve cell signaling events over discretized cellular and subcellular geometries. We demonstrate its application to several different biological systems, including YAP/TAZ mechanotransduction, calcium signaling in neurons and cardiomyocytes, and ATP generation in mitochondria. Throughout, we utilize experimentally-derived realistic cellular geometries represented by well-conditioned tetrahedral meshes. These scenarios demonstrate the applicability, flexibility, accuracy and efficiency of SMART across a range of temporal and spatial scales.},
 
-    github = {},
-    zenodo = {},
+    github = {RangamaniLabUCSD/smart},
+    zenodo = {10.5281/zenodo.10019464},
+    image = {francis-spatial-modeling.png},
+    pdf = {},
+    supplement = {},
+    website = {},
 
     related = {2024-SMART/biorxiv},
     relatedtype = {preprint}
@@ -32,6 +38,7 @@
 @article{griswold-axon-pearling,
     entrysubtype={unpublished},
     pubstate = {Conditionally Accepted},
+    shorthand = {-},
 
     title = {Membrane mechanics dictate axonal morphology and function},
     author = { Jacqueline M. Griswold and  Mayte Bonilla-Quintana and Renee Pepper and  Christopher T. Lee and Sumana Raychaudhuri and Siyi Ma and Quan Gan and Sarah Syed and  Cuncheng Zhu and Miriam Bell and Mitsuo Suga and Yuuki Yamaguchi and U. Valentin Nägerl and  Graham Knott and  Padmini Rangamani and Shigeki Watanabe},
@@ -49,6 +56,10 @@
 
     github = {rangamanilabucsd/2023-axon-pearling},
     zenodo = {10.5281/zenodo.8060707},
+    image = {griswold-axon-pearling.png},
+    pdf = {},
+    supplement = {},
+    website = {},
 
     related = {2023-axon-pearling/biorxiv},
     relatedtype = {preprint}
@@ -76,8 +87,18 @@
     volumes = {2},
     issn = {0076-6879},
     doi = {10.1016/bs.mie.2024.03.016},
-    keywords = {Membrane mechanics, Discrete differential geometry, Meshes, Helfrich Hamiltonian, Membrane-protein interactions, Mechanochemical interactions},
-    abstract = {The Helfrich free energy is widely used to model the generation of membrane curvature due to different physical and chemical components. The governing equations resulting from the energy minimization procedure are a system of coupled higher order partial differential equations. Simulations of membrane deformation for obtaining quantitative comparisons against experimental observations require computational schemes that will allow us to solve these equations without restrictions to axisymmetric coordinates. Here, we describe one such tool that we developed in our group based on discrete differential geometry to solve these equations along with examples.}
+    abstract = {The Helfrich free energy is widely used to model the generation of membrane curvature due to different physical and chemical components. The governing equations resulting from the energy minimization procedure are a system of coupled higher order partial differential equations. Simulations of membrane deformation for obtaining quantitative comparisons against experimental observations require computational schemes that will allow us to solve these equations without restrictions to axisymmetric coordinates. Here, we describe one such tool that we developed in our group based on discrete differential geometry to solve these equations along with examples.},
+
+
+    github = {},
+    zenodo = {},
+    image = {},
+    pdf = {},
+    supplement = {},
+    website = {},
+
+    related = {},
+    relatedtype = {preprint}
 }
 
 
@@ -95,7 +116,12 @@
     doi = {10.15252/embj.2023114054},
     abstract = {The inner mitochondrial membrane (IMM) is the site of bulk ATP generation in cells and has a broadly conserved lipid composition enriched in unsaturated phospholipids and cardiolipin (CL). While proteins that shape the IMM and its characteristic cristae membranes (CM) have been defined, specific mechanisms by which mitochondrial lipids dictate its structure and function have yet to be elucidated. Here we combine experimental lipidome dissection with multi-scale modeling to investigate how lipid interactions shape CM morphology and ATP generation. When modulating fatty acid unsaturation in engineered yeast strains, we observed that loss of di-unsaturated phospholipids (PLs) led to a breakpoint in IMM topology and respiratory capacity. We found that PL unsaturation modulates the organization of ATP synthases that shape cristae ridges. Based on molecular modeling of mitochondrial-specific membrane adaptations, we hypothesized that conical lipids like CL buffer against the effects of saturation on the IMM. In cells, we discovered that loss of CL collapses the IMM at intermediate levels of PL saturation, an effect that is independent of ATP synthase oligomerization. To explain this interaction, we employed a continuum modeling approach, finding that lipid and protein-mediated curvatures are predicted to act in concert to form curved membranes in the IMM. The model highlighted a snapthrough instability in cristae tubule formation, which could drive IMM collapse upon small changes in composition. The interaction between CL and di-unsaturated PLs suggests that growth conditions that alter the fatty acid pool, such as oxygen availability, could define CL function. While loss of CL only has a minimal phenotype under standard laboratory conditions, we show that its synthesis is essential under microaerobic conditions that better mimic natural yeast fermentation. Lipid and protein-mediated mechanisms of curvature generation can thus act together to support mitochondrial architecture under changing environments.},
 
-    
+    github = {},
+    zenodo = {},
+    image = {venkatraman-mito-saturation.png},
+    pdf = {},
+    supplement = {},
+    website = {}, 
 
     related = {2023-cristae/biorxiv,2023-cristae/pmcid},
     relatedtype = {preprint}
@@ -124,6 +150,14 @@
     url = {https://joss.theoj.org/papers/10.21105/joss.05580}, 
     
     abstract = {Recent advances in microscopy and 3D reconstruction methods have allowed for characterization of cellular morphology in unprecedented detail, including the irregular geometries of intracellular subcompartments such as membrane-bound organelles. These geometries are now compatible with predictive modeling of cellular function. Biological cells respond to stimuli through sequences of chemical reactions generally referred to as cell signaling pathways. The propagation and reaction of chemical substances in cell signaling pathways can be represented by coupled nonlinear systems of reaction-transport equations. These reaction pathways include numerous chemical species that react across boundaries or interfaces (e.g., the cell membrane and membranes of organelles within the cell) and domains (e.g., the bulk cell volume and the interior of organelles). Such systems of multi-dimensional partial differential equations (PDEs) are notoriously difficult to solve because of their high dimensionality, non-linearities, strong coupling, stiffness, and potential instabilities. In this work, we describe Spatial Modeling Algorithms for Reactions and Transport (SMART), a high-performance finite-element-based simulation package for model specification and numerical simulation of spatially-varying reaction-transport processes. SMART is based on the FEniCS finite element library, provides a symbolic representation framework for specifying reaction pathways, and supports geometries in 2D and 3D including large and irregular cell geometries obtained from modern ultrastructural characterization methods.},
+
+    github = {RangamaniLabUCSD/smart},
+    zenodo = {10.5281/zenodo.10019464},
+    image = {laughlin-smart.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related = {LaughlinEtAl2023/arxiv},
     relatedtype = {preprint}
 }
@@ -146,6 +180,14 @@
     url = {https://doi.org/10.1146/annurev-biophys-072123-124954},
     urldate = {2024-02-29},
     abstract = {Dendritic spines are small, bulbous compartments that function as postsynaptic sites and undergo intense biochemical and biophysical activity. The role of the myriad signaling pathways that are implicated in synaptic plasticity is well studied. A recent abundance of quantitative experimental data has made the events associated with synaptic plasticity amenable to quantitative biophysical modeling. Spines are also fascinating biophysical computational units because spine geometry, signal transduction, and mechanics work in a complex feedback loop to tune synaptic plasticity. In this sense, ideas from modeling cell motility can inspire us to develop multiscale approaches for predictive modeling of synaptic plasticity. In this article, we review the key steps in postsynaptic plasticity with a specific focus on the impact of spine geometry on signaling, cytoskeleton rearrangement, and membrane mechanics. We summarize the main experimental observations and highlight how theory and computation can aid our understanding of these complex processes.Expected final online publication date for the Annual Review of Biophysics, Volume 53 is May 2024. Please see http://www.annualreviews.org/page/journal/pubdates for revised estimates.},
+
+    github = {},
+    zenodo = {},
+    image = {lee-synaptic-plasticity.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related = {},
     relatedtype = {preprint},
 }
@@ -162,7 +204,17 @@
     pages = {113089},
     doi = {10.1016/j.celrep.2023.113089},
     url = {https://www.cell.com/cell-reports/abstract/S2211-1247(23)01100-2},
+
     abstract = {At all levels in biology, form and function are closely interdependent. Mitochondria have particularly attracted attention since their altered morphology is often observed under pathophysiological conditions including heart failure and Alzheimer's disease. Despite the physiological significance, assessing the direct causal relationship between mitochondrial morphology and function has been out of reach, primarily due to limitations of the existing experimental technologies such as optical tweezers and atomic force microscopy in manipulating the morphology of this submicron length-scale entity deep inside living cells. By engineering an actin regulator, ActA, derived from Listeria monocytogenes, and coupling it with protein dimerization schemes, we first established molecular tools collectively termed ActuAtor that can trigger actin polymerization to exert constrictive forces at subcellular locations of choice in a rapidly inducible manner. The ActuAtor-mediated forces drove striking movement and/or deformation of target intracellular structures including mitochondria, Golgi apparatus, and nucleus, as well as non-membrane-bound biomolecular condensates such as stress granules. We then implemented ActuAtor in functional assays of mitochondria, uncovering that the fragmented mitochondria are more susceptible to degradation, while none of the other essential functions tested, such as ATP synthesis, are morphology dependent. The modular and genetically-encoded features of ActuAtor should enable its application in de novo studies of the interplay between form and function at various intracellular and subcellular spaces.},
+    
+    addendum = {},
+    github = {RangamaniLabUCSD/ActuAtorForceEstimation},
+    zenodo = {},
+    image = {nakamura-actuator.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related = {Actuator/pmcid},
     relatedtype = {preprint}
 }
@@ -185,6 +237,14 @@
     url = {https://www.science.org/doi/10.1126/sciadv.adg3485},
     urldate = {2023-07-07},
     abstract = {The ability of proteins to generate curved membrane structures is essential to diverse cellular functions, from membrane traffic to nuclear transport. Established mechanisms of membrane bending require protein domains with specific structural features such as curved scaffolds and wedge-like amphipathic helices. However, recent work has shown that intrinsically disordered proteins, which lack a well-defined secondary structure, can also be potent drivers of membrane curvature. Specifically, steric pressure among membrane-bound disordered domains that repel one another can drive convex bending. In contrast, disordered domains that attract one another, forming liquid-like condensates, can drive concave bending by compressing membrane surfaces. How might disordered domains that contain both repulsive and attractive domains impact membrane curvature? Here we examine a series of recombinant chimeras that link attractive and repulsive domains within the same, membrane-bound protein. When the attractive domain was closer to the membrane, condensation of these domains helped to concentrate the repulsive domains, amplifying steric pressure, leading to convex curvature. In contrast, when the order of the attractive and repulsive domains was reversed, such that the repulsive domain was closer to the membrane surface, attractive interactions dominated, resulting concave curvature. Further, a transition from convex to concave curvature was observed when an increase in ionic strength was used to simultaneously reduce steric clashes among the repulsive domains while increasing condensation of the attractive domains. Collectively, these results illustrate a set of design rules that can be used to control membrane curvature by adjusting the balance between attractive and repulsive interactions among disordered proteins.Competing Interest StatementThe authors have declared no competing interest.},
+
+    github = {},
+    zenodo = {},
+    image = {yuan-ins-and-outs.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related = {2023-IDP/biorxiv,2023-IDP/pmcid},
     relatedtype = {preprint}
 }
@@ -212,6 +272,14 @@
     url = {https://onlinelibrary.wiley.com/doi/abs/10.1113/JP283407},
     urldate = {2023-08-14},
     abstract = {The modification of neural circuits depends on the strengthening and weakening of synaptic connections. Synaptic strength is often correlated to the density of the ionotropic, glutamatergic receptors, AMPARs, (α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptors) at the postsynaptic density (PSD). While AMPAR density is known to change based on complex biological signalling cascades, the effect of geometric factors such as dendritic spine shape, size and curvature remain poorly understood. In this work, we developed a deterministic, spatiotemporal model to study the dynamics of AMPARs during long-term potentiation (LTP). This model includes a minimal set of biochemical events that represent the upstream signalling events, trafficking of AMPARs to and from the PSD, lateral diffusion in the plane of the spine membrane, and the presence of an extrasynaptic AMPAR pool. Using idealized and realistic spine geometries, we show that the dynamics and increase of bound AMPARs at the PSD depends on a combination of endo- and exocytosis, membrane diffusion, the availability of free AMPARs and intracellular signalling interactions. We also found non-monotonic relationships between spine volume and the change in AMPARs at the PSD, suggesting that spines restrict changes in AMPARs to optimize resources and prevent runaway potentiation. Key points Synaptic plasticity involves dynamic biochemical and physical remodelling of small protrusions called dendritic spines along the dendrites of neurons. Proper synaptic functionality within these spines requires changes in receptor number at the synapse, which has implications for downstream neural functions, such as learning and memory formation. In addition to being signalling subcompartments, spines also have unique morphological features that can play a role in regulating receptor dynamics on the synaptic surface. We have developed a spatiotemporal model that couples biochemical signalling and receptor trafficking modalities in idealized and realistic spine geometries to investigate the role of biochemical and biophysical factors in synaptic plasticity. Using this model, we highlight the importance of spine size and shape in regulating bound AMPA receptor dynamics that govern synaptic plasticity, and predict how spine shape might act to reset synaptic plasticity as a built-in resource optimization and regulation tool.},
+
+    github = {},
+    zenodo = {},
+    image = {bell-ampar-pde.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related = {2022-AMPAR_PDE/biorxiv,2022-AMPAR_PDE/pmcid},
     relatedtype = {preprint}
 }
@@ -238,6 +306,14 @@
     url = {https://doi.org/10.1021/acs.jpcb.2c02441},
     urldate = {2022-08-31},
     abstract = {The protein, azurin, has enabled the study of the tryptophan radical. Upon UV excitation of tyrosine-deficient apoazurin and in the presence of a Co(III) electron acceptor, the neutral radical (W48•) is formed. The lifetime of W48• in apoazurin is 41 s, which is shorter than the lifetime of several hours in Zn-substituted azurin. Molecular dynamics simulations revealed enhanced fluctuations of apoazurin which likely destabilize W48•. The photophysics of W48 was investigated to probe the precursor state for ET. The phosphorescence intensity was eliminated in the presence of an electron acceptor while the fluorescence was unchanged; this quenching of the phosphorescence is attributed to ET. The kinetics associated with W48• were examined with a model that incorporates intersystem crossing, ET, deprotonation, and decay of the cation radical. The estimated rate constants for ET (6 × 106 s–1) and deprotonation (3 × 105 s–1) are in agreement with a photoinduced mechanism where W48• is derived from the triplet state. The triplet as the precursor state for ET was supported by photolysis of apoazurin with 280 nm in the absence and presence of triplet-absorbing 405 nm light. Absorption bands from the neutral radical were observed only in the presence of blue light.},
+
+    github = {},
+    zenodo = {},
+    image = {lopez-pena-azurin.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {2021-azurin/pmcid},
     relatedtype  = {preprint}
 }
@@ -259,6 +335,14 @@
     issn = {26670747},
     doi = {10.1016/j.bpr.2022.100062},
     abstract = {Biomembranes adopt varying morphologies that are vital to cellular functions. Many studies use computational modeling to understand how various mechanochemical factors contribute to membrane shape transformations. Compared with approximation-based methods (e.g., finite element method [FEM]), the class of discrete mesh models offers greater flexibility to simulate complex physics and shapes in three dimensions; its formulation produces an efficient algorithm while maintaining coordinate-free geometric descriptions. However, ambiguities in geometric definitions in the discrete context have led to a lack of consensus on which discrete mesh model is theoretically and numerically optimal; a bijective relationship between the terms contributing to both the energy and forces from the discrete and smooth geometric theories remains to be established. We address this and present an extensible framework, Mem3DG, for modeling 3D mechanochemical dynamics of membranes based on discrete differential geometry (DDG) on triangulated meshes. The formalism of DDG resolves the inconsistency and provides a unifying perspective on how to relate the smooth and discrete energy and forces. To demonstrate, Mem3DG is used to model a sequence of examples with increasing mechanochemical complexity: recovering classical shape transformations such as 1) biconcave disk, dumbbell, and unduloid; and 2) spherical bud on spherical, flat-patch membrane; investigating how the coupling of membrane mechanics with protein mobility jointly affects phase and shape transformation. As high-resolution 3D imaging of membrane ultrastructure becomes more readily available, we envision Mem3DG to be applied as an end-to-end tool to simulate realistic cell geometry under user-specified mechanochemical conditions.},
+
+    github = {rangamanilabucsd/mem3dg},
+    zenodo = {10.5281/zenodo.10359392},
+    image = {zhu-mem3dg.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related = {2021-mem3dg/biorxiv, 2021-mem3dg/pmcid},
     relatedtype = {preprint}
 }
@@ -270,6 +354,7 @@
     eprint      = 9495267,
     eprinttype  = {pmcid}
 }
+
 
 @article{bell-stochastic-dendritic-spine-calcium,
     title = {Dendritic Spine Morphology Regulates Calcium-Dependent Synaptic Weight Change},
@@ -283,6 +368,14 @@
     issn = {0022-1295},
     doi = {10.1085/jgp.202112980},
     abstract = {Dendritic spines act as computational units and must adapt their responses according to their activation history. Calcium influx acts as the first signaling step during postsynaptic activation and is a determinant of synaptic weight change. Dendritic spines also come in a variety of sizes and shapes. To probe the relationship between calcium dynamics and spine morphology, we used a stochastic reaction-diffusion model of calcium dynamics in idealized and realistic geometries. We show that despite the stochastic nature of the various calcium channels, receptors, and pumps, spine size and shape can separately modulate calcium dynamics and subsequently synaptic weight updates in a deterministic manner. The relationships between calcium dynamics and spine morphology identified in idealized geometries also hold in realistic geometries suggesting that there are geometrically determined deterministic relationships that may modulate synaptic weight change.},
+
+    github = {},
+    zenodo = {},
+    image = {bell-stochastic-ca.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related = {2021-stochasticspine/biorxiv,2021-stochasticspine/pmcid},
     relatedtype = {preprint},
 }
@@ -308,6 +401,14 @@
     issn = {1573-4951},
     doi = {10.1007/s10822-021-00433-2},
     abstract     = {The discovery of new drugs is a time consuming and expensive process. Methods such as virtual screening, which can filter out ineffective compounds from drug libraries prior to expensive experimental study, have become popular research topics. As the computational drug discovery community has grown, in order to benchmark the various advances in methodology, organizations such as the Drug Design Data Resource have begun hosting blinded grand challenges seeking to identify the best methods for ligand pose-prediction, ligand affinity ranking, and free energy calculations. Such open challenges offer a unique opportunity for researchers to partner with junior students (e.g., high school and undergraduate) to validate basic yet fundamental hypotheses considered to be uninteresting to domain experts. Here, we, a group of high school-aged students and their mentors, present the results of our participation in Grand Challenge 4 where we predicted ligand affinity rankings for the Cathepsin S protease, an important protein target for autoimmune diseases. To investigate the effect of incorporating receptor dynamics on ligand affinity rankings, we employed the Relaxed Complex Scheme, a molecular docking method paired with molecular dynamics-generated receptor conformations. We found that CatS is a difficult target for molecular docking and we explore some advanced methods such as distance-restrained docking to try to improve the correlation with experiments. This project has exemplified the capabilities of high school students when supported with a rigorous curriculum, and demonstrates the value of community-driven competitions for beginners in computational drug discovery.},
+
+    github = {},
+    zenodo = {},
+    image = {gan-d3r-gc4.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {2020-d3rgc4/biorxiv,2020-d3rgc4/pmcid},
     relatedtype  = {preprint}
 }
@@ -333,6 +434,14 @@
     issn = {1096-9861},
     doi = {10.1002/cne.25254},
     abstract     = {In the highly dynamic metabolic landscape of a neuron, mitochondrial membrane architectures can provide critical insight into the unique energy balance of the cell. Current theoretical calculations of functional outputs like ATP and heat often represent mitochondria as idealized geometries and therefore can miscalculate the metabolic fluxes. To analyze mitochondrial morphology in neurons of mouse cerebellum neuropil, 3D tracings of complete synaptic and axonal mitochondria were constructed using a database of serial TEM tomography images and converted to watertight meshes with minimal distortion of the original microscopy volumes with a granularity of 1.6 nanometer isotropic voxels. The resulting in silico representations were subsequently quantified by differential geometry methods in terms of the mean and Gaussian curvatures, surface areas, volumes, and membrane motifs, all of which can alter the metabolic output of the organelle. Finally, we identify structural motifs that are present across this population of mitochondria; observations which may contribute to future modeling studies of mitochondrial physiology and metabolism in neurons.},
+
+    github = {},
+    zenodo = {},
+    image = {mendelsohn-neuro-mito.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     url = {https://onlinelibrary.wiley.com/doi/10.1002/cne.25254},
     related      = {MendelsohnEtAl2021a/biorxiv, 2021-mitomorpho/pmcid},
     relatedtype  = {preprint}
@@ -358,6 +467,14 @@
     volume = {118},
     number = {31},
     abstract = {To advance the mission of in silico cell biology, modeling the interactions of large and complex biological systems becomes increasingly relevant. The combination of molecular dynamics (MD) simulations and Markov state models (MSMs) has enabled the construction of simplified models of molecular kinetics on long timescales. Despite its success, this approach is inherently limited by the size of the molecular system. With increasing size of macromolecular complexes, the number of independent or weakly coupled subsystems increases, and the number of global system states increases exponentially, making the sampling of all distinct global states unfeasible. In this work, we present a technique called independent Markov decomposition (IMD) that leverages weak coupling between subsystems to compute a global kinetic model without requiring the sampling of all combinatorial states of subsystems. We give a theoretical basis for IMD and propose an approach for finding and validating such a decomposition. Using empirical few-state MSMs of ion channel models that are well established in electrophysiology, we demonstrate that IMD models can reproduce experimental conductance measurements with a major reduction in sampling compared with a standard MSM approach. We further show how to find the optimal partition of all-atom protein simulations into weakly coupled subunits.},
+
+    github = {},
+    zenodo = {},
+    image = {hempel-independent-msm.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {2021-dmsm/biorxiv,2021-dmsm/pmcid},
     relatedtype  = {preprint}
 }
@@ -381,6 +498,14 @@
     volume       = 71,
     pages        = {38--45},
     abstract     = {The budding of membranes and curvature generation is common to many forms of trafficking in cells. Clathrin-mediated endocytosis, as a prototypical example of trafficking, has been studied in great detail using a variety of experimental systems and methods. Recently, advances in experimental methods have led to great strides in insights on the molecular mechanisms and the spatiotemporal dynamics of the protein machinery associated with membrane curvature generation. These advances have been ably supported by computational models, which have given us insights into the underlying mechanical principles of clathrin-mediated endocytosis. On the other hand, targeted experimental perturbation of membranes has lagged behind that of proteins in cells. In this area, modeling is especially critical to interpret experimental measurements in a mechanistic context. Here, we discuss the contributions made by these models to our understanding of endocytosis and identify opportunities to strengthen the connections between models and experiments.},
+
+    github = {},
+    zenodo = {},
+    image = {lee-value-models.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {2021-membranemodel-cocb/pmcid},
     relatedtype  = {preprint}
 }
@@ -403,6 +528,14 @@
     number       = 4,
     pages        = {e1007756},
     abstract     = {Recent advances in electron microscopy have enabled the imaging of single cells in 3D at nanometer length scale resolutions. An uncharted frontier for in silico biology is the ability to simulate cellular processes using these observed geometries. Enabling such simulations requires watertight meshing of electron micrograph images into 3D volume meshes, which can then form the basis of computer simulations of such processes using numerical techniques such as the finite element method. In this paper, we describe the use of our recently rewritten mesh processing software, GAMer 2, to bridge the gap between poorly conditioned meshes generated from segmented micrographs and boundary marked tetrahedral meshes which are compatible with simulation. We demonstrate the application of a workflow using GAMer 2 to a series of electron micrographs of neuronal dendrite morphology explored at three different length scales and show that the resulting meshes are suitable for finite element simulations. This work is an important step towards making physical simulations of biological processes in realistic geometries routine. Innovations in algorithms to reconstruct and simulate cellular length scale phenomena based on emerging structural data will enable realistic physical models and advance discovery at the interface of geometry and cellular processes. We posit that a new frontier at the intersection of computational technologies and single cell biology is now open.},
+
+    github = {ctlee/gamer},
+    zenodo = {},
+    image = {lee-gamer-striking.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {2019-gamer2/arxiv,2019-gamer2/biorxiv,2019-gamer2/pmcid},
     relatedtype  = {preprint}
 }
@@ -419,6 +552,8 @@
     eprint       = 6716611,
     eprinttype   = {pmcid}
 }
+
+
 @article{vasan-ml-cell-sims,
     title        = {{Applications and Challenges of Machine Learning to Enable Realistic Cellular Simulations}},
     author       = {Vasan, Ritvik and Rowan, Meagan P and  Lee, Christopher T and Johnson, Gregory R and Rangamani, Padmini and Holst, Michael},
@@ -431,6 +566,14 @@
     url          = {https://www.frontiersin.org/articles/10.3389/fphy.2019.00247/abstract},
     abstract     = {In this perspective, we examine three key aspects of an end-to-end pipeline for realistic cellular simulations: Reconstruction and segmentation of cellular structure; Generation of cellular structure; and Mesh generation, simulation, and data analysis. We highlight some of the relevant prior work in these distinct but overlapping areas, with a particular emphasis on current use of machine learning technologies, as well as on future opportunities.},
     addendum     = {2019 Frontiers in Physics Editors Choice},
+
+    github = {},
+    zenodo = {},
+    image = {vasan-ml.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Vasan2019-MachineLearning/arxiv},
     relatedtype  = {preprint}
 }
@@ -453,6 +596,14 @@
     number       = 5,
     pages        = {1003--1008},
     abstract     = {Advances in imaging methods such as electron microscopy, tomography, and other modalities are enabling high-resolution reconstructions of cellular and organelle geometries. Such advances pave the way for using these geometries for biophysical and mathematical modeling once these data can be represented as a geometric mesh, which, when carefully conditioned, enables the discretization and solution of partial differential equations. In this work, we outline the steps for a na\"ive user to approach the Geometry-preserving Adaptive MeshER software version 2, a mesh generation code written in C++ designed to convert structural data sets to realistic geometric meshes while preserving the underlying shapes. We present two example cases: 1) mesh generation at the subcellular scale as informed by electron tomography and 2) meshing a protein with a structure from x-ray crystallography. We further demonstrate that the meshes generated by the Geometry-preserving Adaptive MeshER software are suitable for use with numerical methods. Together, this collection of libraries and tools simplifies the process of constructing realistic geometric meshes from structural biology data.},
+
+    github = {ctlee/gamer},
+    zenodo = {},
+    image = {lee-mesh-platform.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Lee2019-MeshingPlatform/arxiv,Lee2019-MeshingPlatform/biorxiv,Lee2019-MeshingPlatform/pmcid},
     relatedtype  = {preprint}
 }
@@ -484,6 +635,14 @@
     pages        = {1--20},
     url          = {http://dl.acm.org/citation.cfm?doid=3349340.3321515},
     abstract     = {We introduce the Colored Abstract Simplicial Complex library (CASC): a new, modern, and header-only C++ library that provides a data structure to represent arbitrary dimension abstract simplicial complexes (ASC) with user-defined classes stored directly on the simplices at each dimension. This is accomplished by using the latest C++ language features including variadic template parameters introduced in C++11 and automatic function return type deduction from C++14. Effectively, CASC decouples the representation of the topology from the interactions of user data. We present the innovations and design principles of the data structure and related algorithms. This includes a metadata-aware decimation algorithm, which is general for collapsing simplices of any dimension. We also present an example application of this library to represent an orientable surface mesh.},
+
+    github = {ctlee/casc},
+    zenodo = {},
+    image = {lee-casc.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {LeeCASC2019/arxiv,LeeCASC2019/pmcid},
     relatedtype  = {preprint}
 }
@@ -508,6 +667,14 @@
     number       = 17,
     pages        = {8131--8136},
     abstract     = {CC chemokine receptor 2 (CCR2) is a part of the chemokine receptor family, an important class of therapeutic targets. These class A G-protein coupled receptors (GPCRs) are involved in mammalian signaling pathways and control cell migration toward endogenous CC chemokine ligands, named for the adjacent cysteine motif on their N terminus. Chemokine receptors and their associated ligands are involved in a wide range of diseases and thus have become important drug targets. CCR2, in particular, promotes the metastasis of cancer cells and is also implicated in autoimmunity-driven type-1 diabetes, diabetic nephropathy, multiple sclerosis, asthma, atherosclerosis, neuropathic pain, and rheumatoid arthritis. Although promising, CCR2 antagonists have been largely unsuccessful to date. Here, we investigate the effect of an orthosteric and an allosteric antagonist on CCR2 dynamics by coupling long-timescale molecular dynamics simulations with Markov-state model theory. We find that the antagonists shift CCR2 into several stable inactive conformations that are distinct from the crystal structure conformation and disrupt a continuous internal water and sodium ion pathway, preventing transitions to an active-like state. Several metastable conformations present a cryptic drug-binding pocket near the allosteric site that may be amenable to targeting with small molecules. Without antagonists, the apo dynamics reveal intermediate conformations along the activation pathway that provide insight into the basal dynamics of CCR2 and may also be useful for future drug design.},
+
+    github = {},
+    zenodo = {},
+    image = {taylor-ccr2.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Taylor2019/biorxiv, Taylor2019/pmcid},
     relatedtype  = {preprint}
 }
@@ -534,6 +701,14 @@
     pages        = {4941--4948},
     abstract     = {Efficient prediction and ranking of small molecule binders by their kinetic (kon and koff) and thermodynamic (ΔG) properties can be a valuable metric for drug lead optimization, as these quantities are often indicators of in vivo efficacy. We have previously described a hybrid molecular dynamics, Brownian dynamics, and milestoning model, Simulation Enabled Estimation of Kinetic Rates (SEEKR), that can predict kon's, koff's, and ΔG's. Here we demonstrate the effectiveness of this approach for ranking a series of seven small molecule compounds for the model system, β-cyclodextrin, based on predicted kon's and koff's. We compare our results using SEEKR to experimentally determined rates as well as rates calculated using long time scale molecular dynamics simulations and show that SEEKR can effectively rank the compounds by koff and ΔG with reduced computational cost. We also provide a discussion of convergence properties and sensitivities of calculations with SEEKR to establish "best practices" for its future use.},
     addendum     = {Featured on Journal Cover},
+
+    github = {},
+    zenodo = {},
+    image = {jagger-seekr.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Jagger2018/chemrxiv, Jagger2018/pmcid},
     relatedtype  = {preprint}
 }
@@ -558,6 +733,14 @@
     url          = {https://ieeexplore.ieee.org/document/8452060/},
     abstract     = {As biologists discover and learn to embrace the complexity of biological systems, computational data analysis and modeling have become critical for furthering our understanding. Exascale computing will enable the development of new predictive multiscale models, transforming how we study the behaviors of organisms and ecosystems, ultimately leading to new innovations and discoveries.},
     addendum     = {Special issue on the National Strategic Computing Initiative},
+
+    github = {},
+    zenodo = {},
+    image = {},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {LeeCISE2018/pmcid},
     relatedtype  = {preprint}
 }
@@ -565,7 +748,7 @@
     eprint       = 6458592,
     eprinttype   = {pmcid}
 }
-@article{lee-milestoning-permeability,
+@article{votapka-milestoning-permeability,
     title        = {{Two Relations to Estimate Membrane Permeability Using Milestoning}},
     author       = {Votapka, Lane William and Lee, Christopher T and Amaro, Rommie E},
     author+an    = {1=coauth;2=highlight,coauth; 3=corresponding},
@@ -578,6 +761,14 @@
     pages        = {8606--8616},
     abstract     = {Prediction of passive permeation rates of solutes across lipid bilayers is important to drug design, toxicology, and other biological processes such as signaling. The inhomogeneous solubility-diffusion (ISD) equation is traditionally used to relate the position-dependent potential of mean force and diffusivity to the permeability coefficient. The ISD equation is derived via the Smoluchowski equation and assumes overdamped system dynamics. It has been suggested that the complex membrane environment may exhibit more complicated damping conditions. Here we derive a variant of the inhomogeneous solubility diffusion equation as a function of the mean first passage time (MFPT) and show how milestoning, a method that can estimate kinetic quantities of interest, can be used to estimate the MFPT of membrane crossing and, by extension, the permeability coefficient. We further describe a second scheme, agnostic to the damping condition, to estimate the permeability coefficient from milestoning results or other methods that compute a probability of membrane crossing. The derived relationships are tested using a one-dimensional Langevin dynamics toy system confirming that the presented theoretical methods can be used to estimate permeabilities given simulation and milestoning results.},
     addendum     = {Special issue J. Andrew McCammon Feschrift},
+
+    github = {},
+    zenodo = {},
+    image = {votapka-milestoning.png},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Votapka2016/pmcid},
     relatedtype  = {preprint}
 }
@@ -598,6 +789,14 @@
     pages        = {6370--6390},
     pmid         = 27074285,
     abstract     = {Allosteric drug development holds promise for delivering medicines that are more selective and less toxic than those that target orthosteric sites. To date, the discovery of allosteric binding sites and lead compounds has been mostly serendipitous, achieved through high-throughput screening. Over the past decade, structural data has become more readily available for larger protein systems and more membrane protein classes (e.g., GPCRs and ion channels), which are common allosteric drug targets. In parallel, improved simulation methods now provide better atomistic understanding of the protein dynamics and cooperative motions that are critical to allosteric mechanisms. As a result of these advances, the field of predictive allosteric drug development is now on the cusp of a new era of rational structure-based computational methods. Here, we review algorithms that predict allosteric sites based on sequence data and molecular dynamics simulations, describe tools that assess the druggability of these pockets, and discuss how Markov state models and topology analyses provide insight into the relationship between protein dynamics and allosteric drug binding. In each section, we first provide an overview of the various method classes before describing relevant algorithms and software packages.},
+
+    github = {},
+    zenodo = {},
+    image = {},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Wagner2016/pmcid},
     relatedtype  = {preprint}
 }
@@ -619,6 +818,14 @@
     url          = {http://pubs.acs.org/doi/abs/10.1021/acs.jcim.6b00022},
     pmid         = 27043429,
     abstract     = {Predicting the rate of nonfacilitated permeation of solutes across lipid bilayers is important to drug design, toxicology, and signaling. These rates can be estimated using molecular dynamics simulations combined with the inhomogeneous solubility-diffusion model, which requires calculation of the potential of mean force and position-dependent diffusivity of the solute along the transmembrane axis. In this paper, we assess the efficiency and accuracy of several methods for the calculation of the permeability of a model DMPC bilayer to urea, benzoic acid, and codeine. We compare umbrella sampling, replica exchange umbrella sampling, adaptive biasing force, and multiple-walker adaptive biasing force for the calculation of the transmembrane PMF. No definitive advantage for any of these methods in their ability to predict the membrane permeability coefficient Pm was found, provided that a sufficiently long equilibration is performed. For diffusivities, a Bayesian inference method was compared to a generalized Langevin method, both being sensitive to chosen parameters and the slow relaxation of membrane defects. Agreement within 1.5 log units of the computed Pm with experiment is found for all permeants and methods. Remaining discrepancies can likely be attributed to limitations of the force field as well as slowly relaxing collective movements within the lipid environment. Numerical calculations based on model profiles show that Pm can be reliably estimated from only a few data points, leading to recommendations for calculating Pm from simulations.},
+
+    github = {},
+    zenodo = {},
+    image = {},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Lee2016/pmcid},
     relatedtype  = {preprint}
 }
@@ -640,6 +847,14 @@
     url          = {http://doi.wiley.com/10.1002/bmb.20873},
     pmid         = 26148241,
     abstract     = {Undergraduate biochemistry laboratory courses often do not provide students with an authentic research experience, particularly when the express purpose of the laboratory is purely instructional. However, an instructional laboratory course that is inquiry‐ and research‐based could simultaneously impart scientific knowledge and foster a student’s research expertise and confidence. We have developed a year‐long undergraduate biochemistry laboratory curriculum wherein students determine, via experiment and computation, the function of a protein of known three‐dimensional structure. The first half of the course is inquiry‐based and modular in design; students learn general biochemical techniques while gaining preparation for research experiments in the second semester. Having learned standard biochemical methods in the first semester, students independently pursue their own (original) research projects in the second semester. This new curriculum has yielded an improvement in student performance and confidence as assessed by various metrics. To disseminate teaching resources to students and instructors alike, a freely accessible Biochemistry Laboratory Education resource is available at [http://biochemlab.org](http://biochemlab.org)},
+
+    github = {},
+    zenodo = {},
+    image = {},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Gray2015/pmcid},
     relatedtype  = {preprint}
 }
@@ -662,6 +877,14 @@
     pmid         = 25473382,
     abstract     = {Owing to recent developments in computational algorithms and architectures, it is now computationally tractable to explore biologically relevant, equilibrium dynamics of realistically sized functional proteins using all-atom molecular dynamics simulations. Molecular dynamics simulations coupled with Markov state models is a nascent but rapidly growing technology that is enabling robust exploration of equilibrium dynamics. The objective of this work is to explore the challenges of coupling molecular dynamics simulations and Markov state models in the study of functional proteins. Using recent studies as a framework, we explore progress in sampling, model building, model selection, and coarse-grained analysis of models. Our goal is to highlight some of the current challenges in applying Markov state models to realistically sized proteins and spur discussion on advances in the field.},
     addendum     = {Special issue on free energy},
+
+    github = {},
+    zenodo = {},
+    image = {},
+    pdf = {},
+    supplement = {},
+    website = {},
+
     related      = {Malmstrom2014/pmcid},
     relatedtype  = {preprint}
 }

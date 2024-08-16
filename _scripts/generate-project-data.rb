@@ -28,15 +28,7 @@ module Projects
 
 		config = YAML.load_file(config_file)
 
-		arr = config["projects"]
-
-		if arr.nil? then
-			projects_array = config["readmes"]
-		else
-			projects_array = config["projects"] + config["readmes"]
-		end
-
-
+		projects_array = config["readmes"]
 		readmes_array = config["readmes"]
 
 		puts "Generating project data"
@@ -45,7 +37,9 @@ module Projects
 
 		project_data = Array.new
 		if projects_array.length > 0
-			projects_array.each do |repo|
+			projects_array.each do |repometa|
+				repo = repometa["repo"]
+                branch = repometa["branch"]
 
 				puts "\t#{repo}"
 
@@ -108,11 +102,13 @@ module Projects
 
 				end
 
-				if readmes_array.include? repo then
-					readme_only = true
-				else
-					readme_only = false
-				end
+				readme_only = true
+
+				# if readmes_array.include? repo then
+				# 	readme_only = true
+				# else
+				# 	readme_only = false
+				# end
 
 				# assemble metadata
 				project_data = project_data.push(

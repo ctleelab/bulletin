@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Quantitative Ranking of β-cyclodextrin Ligand Binding Kinetics With SEEKR, a Hybrid MD/BD/Milestoning Approach'
-image: 
 authors: 'B. R. Jagger, C. T. Lee, and R. E. Amaro<sup>$</sup>'
 
 journal: 'J. Phys. Chem. Lett.'
 doi: 10.1021/acs.jpclett.8b02047
 shortcite: Jagger et al., 2018 J. Phys. Chem. Lett.
 citation: '9.17 (September 2018), pp. 4941--4948'
+
+image: jagger-seekr.png
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

@@ -1,7 +1,6 @@
 ---
 layout: paper
 title: 'ActuAtor, a Listeria-inspired molecular tool for generating force in living cells: Controlled deformation of intracellular organizations'
-image: 
 authors: 'H. Nakamura<sup>$</sup>, E. Rho, C. T. Lee, K. Itoh, D. Deng, S. Watanabe, S. Razavi, H. T. Matsubayashi, C. Zhu, E. Jung, P. Rangamani, S. Watanabe, and T. Inoue<sup>$</sup>'
 
 journal: 'Cell Reports'
@@ -9,11 +8,15 @@ doi: 10.1016/j.celrep.2023.113089
 shortcite: Nakamura et al., 2023 Cell Reports
 citation: '42.10 (September 2023), pp. 113089'
 
+image: nakamura-actuator.png
+pdf: 
+supplement: 
+
 biorxiv: 
 arxiv: 
 chemrxiv: 
 
-github: 
+github: RangamaniLabUCSD/ActuAtorForceEstimation
 zenodo: 
 
 date: 2023-09-20

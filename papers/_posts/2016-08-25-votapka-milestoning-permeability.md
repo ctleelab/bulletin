@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Two Relations to Estimate Membrane Permeability Using Milestoning'
-image: 
 authors: 'L. W. Votapka<sup>*</sup>, C. T. Lee<sup>*</sup>, and R. E. Amaro<sup>$</sup>'
 
 journal: 'J. Phys. Chem. B'
 doi: 10.1021/acs.jpcb.6b02814
 shortcite: Votapka et al., 2016 J. Phys. Chem. B
 citation: '120.33 (August 2016), pp. 8606--8616'
+
+image: votapka-milestoning.png
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

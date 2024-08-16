@@ -23,7 +23,6 @@ pub_mkdwn_template = Template(
     ---
     layout: paper
     title: $TITLE
-    image: 
     authors: $AUTHORS
 
     journal: $JOURNAL
@@ -31,13 +30,17 @@ pub_mkdwn_template = Template(
     shortcite: $SHORTCITE
     citation: $CITATION
 
+    image: $IMAGE
+    pdf: $PDF
+    supplement: $SUPPLEMENT
+
     biorxiv: $BIORXIV
     arxiv: $ARXIV
     chemrxiv: $CHEMRXIV
 
     github: $GITHUB
     zenodo: $ZENODO
-
+    
     date: $DATE
 
     status: $STATUS
@@ -170,6 +173,11 @@ def process_bib():
                 d.update({"IMAGE": entry["image"]})
             if "website" in entry:
                 d.update({"WEBSITE": entry["website"]})
+            if "pdf" in entry:
+                d.update({"PDF": entry["pdf"]})
+            if "supplement" in entry:
+                d.update({"SUPPLEMENT": entry["supplement"]})
+
 
             if "entrysubtype" in entry:
                 ## PARSE FOR PREPRINTS

@@ -48,12 +48,17 @@ categories:
         <div class="smallhead mb-1"><a href="{{ paper.url | relative_url }}" class="off">{{ paper.title }}</a></div>
         <p class="note">{{ paper.shortcite }}</p>
       </div>
-      <a href="{{ paper.url | relative_url }}">
-        <img class="ml-3" width=100 class="media-object" src="{{ paper.image | relative_url }}">
-      </a>
+      {% if paper.image %}
+        <a href="{{ paper.url | relative_url }}">
+          <img class="ml-3" width=100 class="media-object" src="{{ '/images/papers/' | append: paper.image | relative_url }}">
+        </a>
+      {% endif %}
     </div>
     <div class="bigspacer"></div>
     <div class="spacer"></div>
       </div>
 {% endfor %}
   </div>
+
+  <div class="hugespacer"></div>
+  <div class="hugespacer"></div>

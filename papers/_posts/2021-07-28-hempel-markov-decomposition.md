@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Independent Markov Decomposition: Towards modeling kinetics of biomolecular complexes'
-image: 
 authors: 'T. Hempel, M. J. Razo<sup>*</sup>, C. T. Lee<sup>*</sup>, B. C. Taylor<sup>*</sup>, R. E. Amaro<sup>$</sup>, and F. Noé<sup>$</sup>'
 
 journal: 'Proc. Natl. Acad. Sci.'
 doi: 10.1073/pnas.2105230118
 shortcite: Hempel et al., 2021 Proc. Natl. Acad. Sci.
 citation: '118.31 (July 2021)'
+
+image: hempel-independent-msm.png
+pdf: 
+supplement: 
 
 biorxiv: 10.1101/2021.03.24.436806
 arxiv: 

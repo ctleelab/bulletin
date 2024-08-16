@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Cristae formation is a mechanical buckling event controlled by the inner membrane lipidome'
-image: 
 authors: 'K. Venkatraman, C. T. Lee<sup>*</sup>, G. C. Garcia<sup>*</sup>, A. Mahapatra<sup>*</sup>, G. Perkins, K. Kim, H. A. Pasolli, S. Phan, J. Lippincott-Schwartz, M. Ellisman, P. Rangamani<sup>$</sup>, and I. Budin<sup>$</sup>'
 
 journal: 'The EMBO Journal'
 doi: 10.15252/embj.2023114054
 shortcite: Venkatraman et al., 2023 The EMBO Journal
 citation: '42.24 (December 2023), pp. e114054'
+
+image: venkatraman-mito-saturation.png
+pdf: 
+supplement: 
 
 biorxiv: 10.1101/2023.03.13.532310
 arxiv: 

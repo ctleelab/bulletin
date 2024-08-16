@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Application of Molecular-Dynamics Based Markov State Models to Functional Proteins'
-image: 
 authors: 'R. D. Malmstrom, C. T. Lee, A. T. Van Wart, and R. E. Amaro<sup>$</sup>'
 
 journal: 'J. Chem. Theory Comput.'
 doi: 10.1021/ct5002363
 shortcite: Malmstrom et al., 2014 J. Chem. Theory Comput.
 citation: '10.7 (July 2014), pp. 2648--2657'
+
+image: 
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

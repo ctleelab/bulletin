@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Role of the Triplet State and Protein Dynamics in the Formation and Stability of the Tryptophan Radical in an Apoazurin Mutant'
-image: 
 authors: 'I. López-Peña, C. T. Lee, J. J. Rivera, M. J. Tauber, and J. E. Kim<sup>$</sup>'
 
 journal: 'J. Phys. Chem. B'
 doi: 10.1021/acs.jpcb.2c02441
 shortcite: López-Peña et al., 2022 J. Phys. Chem. B
 citation: '126 (August 2022)'
+
+image: lopez-pena-azurin.png
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 

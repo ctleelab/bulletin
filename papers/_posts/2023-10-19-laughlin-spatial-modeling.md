@@ -1,7 +1,6 @@
 ---
 layout: paper
 title: 'SMART: Spatial Modeling Algorithms for Reaction and Transport'
-image: 
 authors: 'J. G. Laughlin, J. S. Dokken, H. N. T. Finsberg, E. A. Francis, C. T. Lee, M. E. Rognes, and P. Rangamani<sup>$</sup>'
 
 journal: 'Journal of Open Source Software'
@@ -9,12 +8,16 @@ doi: 10.21105/joss.05580
 shortcite: Laughlin et al., 2023 Journal of Open Source Software
 citation: '8.90 (October 2023), pp. 5580'
 
+image: laughlin-smart.png
+pdf: 
+supplement: 
+
 biorxiv: 
 arxiv: 10.48550/arXiv.2306.07368
 chemrxiv: 
 
-github: 
-zenodo: 
+github: RangamaniLabUCSD/smart
+zenodo: 10.5281/zenodo.10019464
 
 date: 2023-10-19
 

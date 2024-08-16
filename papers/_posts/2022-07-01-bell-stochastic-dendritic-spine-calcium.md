@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Dendritic Spine Morphology Regulates Calcium-Dependent Synaptic Weight Change'
-image: 
 authors: 'M. K. Bell<sup>*</sup>, M. V. Holst<sup>*</sup>, C. T. Lee, and P. Rangamani<sup>$</sup>'
 
 journal: 'J. Gen. Physiol.'
 doi: 10.1085/jgp.202112980
 shortcite: Bell et al., 2022 J. Gen. Physiol.
 citation: '154.8 (July 2022), pp. e202112980'
+
+image: bell-stochastic-ca.png
+pdf: 
+supplement: 
 
 biorxiv: 10.1101/2021.05.06.442994v3
 arxiv: 

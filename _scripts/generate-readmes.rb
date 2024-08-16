@@ -16,15 +16,19 @@ module Readmes
 		projects_array = config["readmes"]
 
 		puts "Downloading readmes"
+        
 
 		if projects_array.length > 0
-			projects_array.each do |repo|
+			projects_array.each do |repometa|
 
-				puts "\t#{repo}"
+                repo = repometa["repo"]
+                branch = repometa["branch"]
+
+                puts "\t#{repometa} #{repo} #{branch}"
 
 				begin
 					githubfile = Down.download(
-        		"https://raw.githubusercontent.com/#{repo}/main/README.md",
+        		"https://raw.githubusercontent.com/#{repo}/#{branch}/README.md",
           	max_redirects: 5
         	)
 				rescue Down::Error
@@ -46,11 +50,11 @@ module Readmes
 						matches.each do |match|
 							imagePath = match[0]
 							puts "\t\t#{imagePath}"
-							imageUrl = "https://raw.githubusercontent.com/#{repo}/main/#{imagePath}"
+							imageUrl = "https://raw.githubusercontent.com/#{repo}/#{branch}/#{imagePath}"
 							begin
 								imageFile = Down.download(imageUrl, max_redirects: 5)
 							rescue Down::Error
-								puts "\t\tFile not found"
+								puts "\t\tFile image not found #{imageUrl}"
 							else
 								FileUtils.mkdir_p(File.dirname(dir+imagePath))
 								FileUtils.mv(imageFile.path, dir+imagePath)

@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'Applications and Challenges of Machine Learning to Enable Realistic Cellular Simulations'
-image: 
 authors: 'R. Vasan, M. P. Rowan, C. T. Lee, G. R. Johnson, P. Rangamani, and M. Holst<sup>$</sup>'
 
 journal: 'Front. Phys.'
 doi: 10.3389/fphy.2019.00247
 shortcite: Vasan et al., 2021 Front. Phys.
 citation: '7 (January 2021)'
+
+image: vasan-ml.png
+pdf: 
+supplement: 
 
 biorxiv: 
 arxiv: 1911.05218

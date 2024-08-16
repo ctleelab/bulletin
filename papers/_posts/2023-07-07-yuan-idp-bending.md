@@ -1,13 +1,16 @@
 ---
 layout: paper
 title: 'The ins and outs of membrane bending by intrinsically disordered proteins'
-image: 
 authors: 'F. Yuan, C. T. Lee, J. Houser, A. Sangani, L. Wang, E. Lafer, P. Rangamani<sup>$</sup>, and J. Stachowiak'
 
 journal: 'Science Advances'
 doi: 10.1126/sciadv.adg3485
 shortcite: Yuan et al., 2023 Science Advances
 citation: '9.27 (July 2023), pp. eadg3485'
+
+image: yuan-ins-and-outs.png
+pdf: 
+supplement: 
 
 biorxiv: 10.1101/2022.12.17.520884
 arxiv: 
