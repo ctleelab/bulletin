@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Rishabh Bhutani
-position: Researcher
+position: High School Researcher
 handle: rbhutani
 twitter:
 github:
