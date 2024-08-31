@@ -8,7 +8,7 @@ github:
 scholar:
 orcid:
 website:
-image:
+image: ![Profile Picture](../../images/rishabh-bhutani.jpg)
 cv:
 email: rishabh.bhutani013@gmail.com
 alumni: false
