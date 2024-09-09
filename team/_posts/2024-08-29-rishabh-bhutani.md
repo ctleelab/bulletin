@@ -8,7 +8,7 @@ github: rishabhbhutani013
 scholar:
 orcid:
 website:
-image: /images/team/rishabh-bhutani.jpg
+image: /images/team/rishabh-bhutani.webp
 cv:
 email: rishabh.bhutani013@gmail.com
 alumni: false
