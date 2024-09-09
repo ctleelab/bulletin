@@ -9,7 +9,7 @@ from typing import List, Tuple
 
 ## CONFIGURATION
 base_path = Path("papers")
-bib_file =  Path("_scripts/ctleelab.bib")
+bib_file = Path("_scripts/ctleelab.bib")
 
 
 def clean():
@@ -157,10 +157,23 @@ def process_bib():
                 d.update(
                     {
                         "INPREP": False,
-                        "JOURNAL": f"'{entry['journaltitle']}'",
                         "DOI": entry["doi"],
                         "CITATION": f"'{citation}'",
                         "STATUS": "",
+                    }
+                )
+
+            if "shortjournaltitle" in entry:
+                d.update(
+                    {
+                        "JOURNAL": f"'{entry['shortjournaltitle']}'",
+                        "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} {entry['shortjournaltitle']}",
+                    }
+                )
+            else:  # Use full journal title
+                d.update(
+                    {
+                        "JOURNAL": f"'{entry['journaltitle']}'",
                         "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} {entry['journaltitle']}",
                     }
                 )
@@ -178,18 +191,17 @@ def process_bib():
             if "supplement" in entry:
                 d.update({"SUPPLEMENT": entry["supplement"]})
 
-
             if "entrysubtype" in entry:
                 ## PARSE FOR PREPRINTS
                 if entry["entrysubtype"] == "unpublished":
                     d.update(
                         {
                             "INPREP": True,
-                            "JOURNAL": "'unpublished'",
+                            "JOURNAL": f"'{entry['pubstate']}'",
                             "DOI": "",
                             "CITATION": "",
                             "STATUS": f"'{entry['pubstate']}'",
-                            "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} unpublished",
+                            "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} {entry['pubstate']}",
                         }
                     )
                 elif entry["entrysubtype"] == "":
@@ -208,7 +220,79 @@ def process_bib():
                 fd.write(result)
 
         elif entry.typ == "incollection":
-            print(f"Skipping {entry.typ}: {entry.key}")
+            print(f"Parsing incollection: {entry.typ}: {entry.key}")
+            # Prepopulate arxiv, biorxiv, chemrxiv, pmcid
+            preprints = {
+                "biorxiv": "",
+                "chemrxiv": "",
+                "pmcid": "",
+                "arxiv": "",
+            }
+
+            # Parse for related preprint entries
+            if "related" in entry and entry["related"] != "":
+                for related in entry["related"].split(","):
+                    related_item = db[related.strip().lower()]
+                    preprints[related_item["eprinttype"].strip()] = related_item[
+                        "eprint"
+                    ]
+
+            date = datetime.date.fromisoformat(entry["date"])
+            authors = algo.parse_names(entry["author"])
+
+            d = {
+                "KEY": entry.key,
+                "TITLE": f"'{algo.tex_to_unicode(entry['title'])}'",
+                "AUTHORS": f"'{format_author_line(entry['author'], entry['author+an'])}'",
+                "BIORXIV": preprints["biorxiv"],
+                "ARXIV": preprints["arxiv"],
+                "CHEMRXIV": preprints["chemrxiv"],
+                "DATE": entry["date"],
+                "ABSTRACT": entry["abstract"],
+                "GITHUB": "",
+                "ZENODO": "",
+            }
+
+            citation = (
+                f"Vol. {entry['volume']}. ({date.strftime('%B %Y')})"
+            )
+            if "pages" in entry:
+                citation += f", pp. {entry['pages']}"
+
+            d.update(
+                {
+                    "INPREP": False,
+                    "DOI": entry["doi"],
+                    "CITATION": f"'{citation}'",
+                    "STATUS": "",
+                }
+            )
+
+            d.update(
+                {
+                    "JOURNAL": f"'{entry['series']}'",
+                    "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} {entry['series']}",
+                }
+            )
+
+            if "github" in entry:
+                d.update({"GITHUB": entry["github"]})
+            if "zenodo" in entry:
+                d.update({"ZENODO": entry["zenodo"]})
+            if "image" in entry:
+                d.update({"IMAGE": entry["image"]})
+            if "website" in entry:
+                d.update({"WEBSITE": entry["website"]})
+            if "pdf" in entry:
+                d.update({"PDF": entry["pdf"]})
+            if "supplement" in entry:
+                d.update({"SUPPLEMENT": entry["supplement"]})
+
+            result = pub_mkdwn_template.substitute(d)
+
+            with open(f"{base_path}/_posts/{entry['date']}-{entry.key}.md", "w") as fd:
+                fd.write(result)
+
         elif entry.typ == "phdthesis":
             print("skip phd thesis")
         elif entry.typ == "online":
