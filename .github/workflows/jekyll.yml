@@ -59,8 +59,7 @@ jobs:
       
       - name: Install biblib
         run: |
-          pwd
-          pip install -v biblib
+          pip install -v $GITHUB_WORKSPACE/biblib
 
       - name: Setup Pages
         id: pages
