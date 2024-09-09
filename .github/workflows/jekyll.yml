@@ -11,6 +11,10 @@ on:
   push:
     branches: ["main"]
 
+  pull_request:
+    branches:
+      - main
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -40,6 +44,25 @@ jobs:
         with:
           ruby-version: '3.3' # Not needed with a .ruby-version file
           cache-version: 0 # Increment this number if you need to re-download cached gems
+
+      - name: Setup Python
+        id: python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Checkout biblib
+        uses: actions/checkout@v4
+        with:
+          repository: 'ctlee/biblib'
+          path: biblib
+      
+      - name: Install biblib
+        run: |
+          pwd
+          pip install -v biblib
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -48,6 +71,7 @@ jobs:
         run: |
           ${{ steps.ruby.outputs.ruby-prefix }}/bin/bundle install
           ${{ steps.ruby.outputs.ruby-prefix }}/bin/ruby _scripts/update-and-preprocess.rb
+
       
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
