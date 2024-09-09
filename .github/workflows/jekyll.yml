@@ -50,7 +50,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Checkout biblib
         uses: actions/checkout@v4
@@ -71,6 +70,7 @@ jobs:
         run: |
           ${{ steps.ruby.outputs.ruby-prefix }}/bin/bundle install
           ${{ steps.ruby.outputs.ruby-prefix }}/bin/ruby _scripts/update-and-preprocess.rb
+          python _scripts/genbib.py
 
       
       - name: Build with Jekyll
