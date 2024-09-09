@@ -70,7 +70,8 @@ jobs:
           ${{ steps.ruby.outputs.ruby-prefix }}/bin/bundle install
           ${{ steps.ruby.outputs.ruby-prefix }}/bin/ruby _scripts/update-and-preprocess.rb
           python _scripts/genbib.py
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
