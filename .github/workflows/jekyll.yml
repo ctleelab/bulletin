@@ -93,5 +93,9 @@ jobs:
       - name: Download artifact
         # Downloads the artifact from the previous job
         uses: actions/download-artifact@v4
+      - name: unpack
+        run: |
+          tar -xvf github-pages/artifact.tar
+          cd github-pages
       - name: Display structure of downloaded files
         run: ls -R
