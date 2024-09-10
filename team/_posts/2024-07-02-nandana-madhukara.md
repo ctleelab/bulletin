@@ -4,13 +4,13 @@ title: Nandana Madhukara
 position: High school researcher
 handle: nmadhukara
 twitter: 
-github: 
+github: nmadhu6002
 scholar: 
 orcid: 
-website:
-image: /images/team/nandana-madhukara.jpg
+website: https://nmadhu6002.github.io/
+image: /images/team/nandana-madhukara.webp
 cv: 
-email: 
+email: nandana.madhukara@gmail.com
 alumni: false
 ---
 

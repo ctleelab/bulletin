@@ -4,11 +4,11 @@ title: Rishabh Bhutani
 position: High school researcher
 handle: rbhutani
 twitter:
-github:
+github: rishabhbhutani013
 scholar:
 orcid:
 website:
-image: /images/team/rishabh-bhutani.jpg
+image: /images/team/rishabh-bhutani.webp
 cv:
 email: rishabh.bhutani013@gmail.com
 alumni: false
