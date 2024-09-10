@@ -60,6 +60,7 @@ jobs:
       - name: Install biblib
         run: |
           pip install -v $GITHUB_WORKSPACE/biblib
+          rm -r $GITHUB_WORKSPACE/biblib
 
       - name: Preprocess projects
         run: |
@@ -97,5 +98,8 @@ jobs:
         run: |
           tar -xvf github-pages/artifact.tar
           cd github-pages
-      - name: Display structure of downloaded files
-        run: ls -R
+      # - name: Display structure of downloaded files
+      #   run: ls -R
+      - name: Deploy to server
+        run: | 
+          rsync -aHxv -e "ssh -A -J ${{ secrets.DEPLOY_USER}}@${{ secrets.JUMP_HOST }} -o StrictHostKeyChecking=no" ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/_hide/
