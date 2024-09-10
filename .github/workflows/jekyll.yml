@@ -100,6 +100,10 @@ jobs:
           cd github-pages
       # - name: Display structure of downloaded files
       #   run: ls -R
+      - name: Create SSH Key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_ed25519
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
       - name: Deploy to server
         run: | 
           rsync -aHxv -e "ssh -A -J ${{ secrets.DEPLOY_USER}}@${{ secrets.JUMP_HOST }} -o StrictHostKeyChecking=no" ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/_hide/
