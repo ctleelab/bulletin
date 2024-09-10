@@ -96,10 +96,8 @@ jobs:
         uses: actions/download-artifact@v4
       - name: unpack
         run: |
-          tar -xvf github-pages/artifact.tar
-          cd github-pages
-      # - name: Display structure of downloaded files
-      #   run: ls -R
+          mkdir -p _site
+          tar -xvf github-pages/artifact.tar -C _site/
       - name: Create SSH Key
         run: |
           install -m 600 -D /dev/null ~/.ssh/id_ed25519
@@ -107,4 +105,4 @@ jobs:
           echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
       - name: Deploy to server
         run: | 
-          rsync -aHxv -e "ssh -A -J ${{ secrets.DEPLOY_USER}}@${{ secrets.JUMP_HOST }}" ./ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }}/_hide/
+          rsync -aHxv -e "ssh -A -J ${{ secrets.DEPLOY_USER}}@${{ secrets.JUMP_HOST }}" _site/ ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:${{ secrets.DEPLOY_PATH }} --delete
