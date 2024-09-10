@@ -1,4 +1,4 @@
-# Preprocessing script
+# Generate content for _data/projects.yml
 # Run before `jekyll build` to go through _config.yml and use octokit to fill out metadata
 #
 # Example:
@@ -28,10 +28,9 @@ module Projects
 
 		config = YAML.load_file(config_file)
 
-		projects_array = config["readmes"]
-		readmes_array = config["readmes"]
+		projects_array = config["projects"]
 
-		puts "Generating project data"
+		puts "GENERATING PROJECT DATA..."
 		# create octokit client
 		client = Octokit::Client.new(:netrc => true, :access_token => ENV['GITHUB_TOKEN'])
 
@@ -39,9 +38,7 @@ module Projects
 		if projects_array.length > 0
 			projects_array.each do |repometa|
 				repo = repometa["repo"]
-                branch = repometa["branch"]
-
-				puts "\t#{repo}"
+        branch = repometa["branch"]
 
 				# load repo metadata
 				octokit_repo = client.repository(repo)
@@ -104,12 +101,6 @@ module Projects
 
 				readme_only = true
 
-				# if readmes_array.include? repo then
-				# 	readme_only = true
-				# else
-				# 	readme_only = false
-				# end
-
 				# assemble metadata
 				project_data = project_data.push(
 					"repo" => repo,
@@ -133,13 +124,13 @@ module Projects
 	end
 
 	def self.write_data(project_data, data_file)
-
-		puts "Writing project data"
+		puts("WRITING PROJECT DATA...")
 		File.write(data_file, project_data.to_yaml)
-
 	end
 
 end
 
 project_data = Projects.generate_data("_config.yml")
 Projects.write_data(project_data, "_data/projects.yml")
+
+exit 0

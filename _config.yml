@@ -30,8 +30,10 @@ exclude:
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
+  - "README.md"
 
-readmes:
+
+projects:
   - 
     repo: ctlee/casc
     branch: main
@@ -51,5 +53,4 @@ readmes:
     repo: RangamaniLabUCSD/smart
     branch: development
 
-projects:
   

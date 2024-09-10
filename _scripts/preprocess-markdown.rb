@@ -5,13 +5,15 @@
 require 'yaml'
 $basedir = Dir.pwd
 
+puts "PREPROCESSING MARKDOWN FILES..."
+
 # collect mapping of project name to repo via _config.yml
 name_to_repo = Hash.new
 repo_to_branch = Hash.new
 
 config = YAML.load_file("_config.yml")
-# (config["projects"] + config["readmes"]).each do |repo|
-config["readmes"].each do |repometa|
+
+config["projects"].each do |repometa|
 	repo = repometa["repo"]
     branch = repometa["branch"]
 	name = repo.split('/').drop(1).join('')
@@ -22,7 +24,7 @@ end
 # mark projects that are only readmes
 name_to_readme = Hash.new
 config = YAML.load_file("_config.yml")
-config["readmes"].each do |repometa|
+config["projects"].each do |repometa|
 	repo = repometa["repo"]
 	name = repo.split('/').drop(1).join('')
 	name_to_readme[name] = true
@@ -46,8 +48,7 @@ mdarray.each { |md|
 		File.rename(md, indexmd)
 		md = indexmd
 	end
-
-	print("#{md}\n")
+	# print("#{md}\n")
 
 	# get project name if possible
 	project_name = nil
@@ -56,13 +57,12 @@ mdarray.each { |md|
 	if temp_name =~ /^[^_]/
 		project_name = temp_name
 	end
-	print("#{project_name}\n")
+	# print("#{project_name}\n")
 
 	repo = name_to_repo[project_name]
 	branch = repo_to_branch[repo]
 	within_project_directory = full_directory[/projects\/#{project_name}\/(.*)/, 1]
-
-	print("#{repo}\n")
+	# print("#{repo}\n")
 
 	# if file is lacking YAML front matter, add some
 	contents = File.open(md, "r").read
@@ -82,20 +82,20 @@ mdarray.each { |md|
 		out.puts
 	end
 
-	# go through file and replace all links that point to .md files with the equivalent .html file
-	contents.gsub!(/\((\S+)\.md\)/, "(\\1.html)")
+	# # go through file and replace all links that point to .md files with the equivalent .html file
+	# contents.gsub!(/\((\S+)\.md\)/, "(\\1.html)")
 
-	# go through file and replace all links that point to source code files with equivalent GitHub links
-	filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
-	filetypes.each {|filetype|
-		contents.gsub!(/\((\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1.#{filetype})")
-	}
+	# # go through file and replace all links that point to source code files with equivalent GitHub links
+	# filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
+	# filetypes.each {|filetype|
+	# 	contents.gsub!(/\((?!http)(\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1.#{filetype})")
+	# }
 
 	# if readme, replace all internal links with GitHub links
-	if name_to_readme[project_name]
-		# catching links that end in "/"
-		contents.gsub!(/\((?!http)(\S+\/)\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1)")
-	end
+	# if name_to_readme[project_name]
+	# 	# catching links that end in "/"
+	# 	contents.gsub!(/\[[^\]]*\]\((?!http)([^\)]+)\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1)")
+	# end
 
 	out.puts contents
 
