@@ -35,7 +35,11 @@ task :test_html do
     # :ignore_empty_alt => true,
     # :ignore_missing_alt => true,
     :check_favicon => true,
-    :ignore_status_codes => [403,429, 200],
+    :ignore_status_codes => [
+        403, # doi returns 403-fobidden for some reason
+        200, # 200 OK
+    ],
+    :swap_urls => { %r{^/ctlee/} => "/"},
     :ignore_urls => ["http://biochemlab.org", 
         "http://www.stack.nl/~dimitri/doxygen/", 
         "http://nbcr.ucsd.edu/",
@@ -44,7 +48,14 @@ task :test_html do
         "https://ctlee.github.io/casc",
         "http://github.com/ctlee/casc/",
         "http://github.com/ctlee/gamer/"
-      ]
+      ],
+    :typhoeus =>
+      {
+        followlocation: true,
+        connecttimeout: 10,
+        timeout: 30,
+      },
+    :hydra =>  { max_concurrency: 5 },
   }
   HTMLProofer.check_directory("./_site", options).run
   puts 'Your website is now tested!'
