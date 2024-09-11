@@ -1,6 +1,6 @@
 name: CTLeeLab Research
 description:  Research brought to you by the ctleelab at the University of California San Diego
-url: http://labs.biology.ucsd.edu/ctlee
+url: https://labs.biology.ucsd.edu/ctlee
 
 markdown: kramdown
 permalink: /:categories/:title/
@@ -31,6 +31,8 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
   - "README.md"
+  - "guide/**"
+  - "calendar/**"
 
 
 projects:

@@ -86,10 +86,10 @@ mdarray.each { |md|
 	# contents.gsub!(/\((\S+)\.md\)/, "(\\1.html)")
 
 	# # go through file and replace all links that point to source code files with equivalent GitHub links
-	# filetypes = ['pdf', 'class', 'cpp', 'h', 'hh', 'ipynb', 'jar', 'java', 'nb', 'py', 'R', 'rb', 'Rmd', 'branches', 'csv', 'fasta', 'json', 'kml', 'log', 'mcc', 'newick', 'nex', 'tsv', 'tips', 'trees', 'timeseries', 'summary', 'txt', 'xml']
-	# filetypes.each {|filetype|
-	# 	contents.gsub!(/\((?!http)(\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1.#{filetype})")
-	# }
+	filetypes = ['pdf', 'cpp', 'h', 'py', 'md']
+	filetypes.each {|filetype|
+		contents.gsub!(/\((?!http)(\S+)\.#{filetype}\)/, "(https://github.com/#{repo}/tree/#{branch}/#{within_project_directory}\\1.#{filetype})")
+	}
 
 	# if readme, replace all internal links with GitHub links
 	# if name_to_readme[project_name]
