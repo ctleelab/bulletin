@@ -1,6 +1,7 @@
 name: CTLeeLab Research
 description:  Research brought to you by the ctleelab at the University of California San Diego
-url: http://labs.biology.ucsd.edu/ctlee
+url: https://labs.biology.ucsd.edu/ctlee
+baseurl: ctlee
 
 markdown: kramdown
 permalink: /:categories/:title/
@@ -30,8 +31,12 @@ exclude:
   - "*.zip"
   - "Gemfile"
   - "Gemfile.lock"
+  - "README.md"
+  - "guide/**"
+  - "calendar/**"
 
-readmes:
+
+projects:
   - 
     repo: ctlee/casc
     branch: main
@@ -51,5 +56,4 @@ readmes:
     repo: RangamaniLabUCSD/smart
     branch: development
 
-projects:
   

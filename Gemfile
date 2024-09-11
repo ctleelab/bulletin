@@ -22,3 +22,9 @@ gem 'webrick'
 
 # gzipping assets
 gem 'jekyll-gzip'
+
+group :test do
+  # Automating builds
+  gem 'rake'
+  gem "html-proofer"
+end

@@ -1,0 +1,78 @@
+#encoding: utf-8
+
+require 'html-proofer'
+require "rake/clean"
+require 'jekyll'
+
+Rake.application.options.trace = true
+
+task :clean do
+  puts 'Cleaning up _site...'.bold
+  Jekyll::Commands::Clean.process({})
+end
+
+desc 'Serve the site'
+task :serve do
+  puts 'Serving your website..'.bold
+  Jekyll::Commands::Serve.process(livereload: true)
+end
+
+desc 'Build the site'
+task build: [:clean] do
+  puts 'Building your website'.bold
+  puts `ruby _scripts/update-and-preprocess.rb`
+  puts `python _scripts/genbib.py`
+  Jekyll::Commands::Build.process(profile: true)
+  puts 'Your website has been built.'
+end
+
+desc 'Test the site, depends on build'
+task :test_html do
+  puts 'Testing your website with HTMLProofer'.bold
+  options = {
+    :assume_extension => true,
+    :check_html => true,
+    # :ignore_empty_alt => true,
+    # :ignore_missing_alt => true,
+    :check_favicon => true,
+    :ignore_status_codes => [
+        403, # doi returns 403-fobidden for some reason
+        200, # 200 OK
+    ],
+    :swap_urls => { %r{^/ctlee/} => "/"},
+    :ignore_urls => ["http://biochemlab.org", 
+        "http://www.stack.nl/~dimitri/doxygen/", 
+        "http://nbcr.ucsd.edu/",
+        "http://wias-berlin.de/software/tetgen/",
+        "http://eigen.tuxfamily.org/index.php?title=Main_Page",
+        "https://ctlee.github.io/casc",
+        "http://github.com/ctlee/casc/",
+        "http://github.com/ctlee/gamer/"
+      ],
+    :typhoeus =>
+      {
+        followlocation: true,
+        connecttimeout: 10,
+        timeout: 30,
+      },
+    :hydra =>  { max_concurrency: 5 },
+  }
+  HTMLProofer.check_directory("./_site", options).run
+  puts 'Your website is now tested!'
+end
+
+# desc 'Test the post structure to be sure no links to the site break'
+# task :test_structure do
+#   puts 'Testing post structure'.bold
+#   file = File.absolute_path('./_site/2016/12/tresorsgx/index.html')
+#   if !File.exists?(file)
+#     $stderr.puts "Error: Folderstructure has changed!".bold
+#     exit
+#   end
+#   puts 'The post structure is now tested!'
+# end
+
+desc 'Build the site and run all tests'
+task ci: [:build, :test_html] do
+    puts 'CI pipeline finished.'.bold
+end
