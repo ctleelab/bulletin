@@ -253,9 +253,7 @@ def process_bib():
                 "ZENODO": "",
             }
 
-            citation = (
-                f"Vol. {entry['volume']}. ({date.strftime('%B %Y')})"
-            )
+            citation = f"Vol. {entry['volume']}. ({date.strftime('%B %Y')})"
             if "pages" in entry:
                 citation += f", pp. {entry['pages']}"
 
