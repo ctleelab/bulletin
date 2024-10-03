@@ -1,7 +1,7 @@
 name: CTLeeLab Research
 description:  Research brought to you by the ctleelab at the University of California San Diego
 url: https://labs.biology.ucsd.edu/ctlee
-baseurl: ctlee
+baseurl: /ctlee
 
 markdown: kramdown
 permalink: /:categories/:title/

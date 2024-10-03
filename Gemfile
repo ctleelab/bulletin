@@ -26,5 +26,6 @@ gem 'jekyll-gzip'
 group :test do
   # Automating builds
   gem 'rake'
-  gem "html-proofer"
+  gem 'html-proofer'
+  gem 'rubocop'
 end
