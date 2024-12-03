@@ -151,7 +151,7 @@ def process_bib():
                 else:
                     citation += f" ({date.strftime('%B %Y')})"
 
-                if "pages" in entry:
+                if "pages" in entry and entry["pages"] != "":
                     citation += f", pp. {entry['pages']}"
 
                 d.update(
@@ -253,9 +253,7 @@ def process_bib():
                 "ZENODO": "",
             }
 
-            citation = (
-                f"Vol. {entry['volume']}. ({date.strftime('%B %Y')})"
-            )
+            citation = f"Vol. {entry['volume']}. ({date.strftime('%B %Y')})"
             if "pages" in entry:
                 citation += f", pp. {entry['pages']}"
 
