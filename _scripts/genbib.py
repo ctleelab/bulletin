@@ -151,7 +151,7 @@ def process_bib():
                 else:
                     citation += f" ({date.strftime('%B %Y')})"
 
-                if "pages" in entry:
+                if "pages" in entry and entry["pages"] != "":
                     citation += f", pp. {entry['pages']}"
 
                 d.update(
