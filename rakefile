@@ -14,7 +14,7 @@ end
 desc 'Serve the site'
 task :serve do
   puts 'Serving your website..'.bold
-  Jekyll::Commands::Serve.process(livereload: true)
+  Jekyll::Commands::Serve.process(livereload: false)
 end
 
 desc 'Build the site'
