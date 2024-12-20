@@ -36,7 +36,8 @@ task :test_html do
     # :ignore_missing_alt => true,
     check_favicon: true,
     ignore_status_codes: [
-      403, # doi returns 403-fobidden for some reason
+      403, # doi returns 403 due to cloudflare challenge
+      # 406, # 406 Not Acceptable from bad user-agent from some sites
       200 # 200 OK
     ],
     swap_urls: { %r{^/ctlee/} => '/' },
@@ -51,7 +52,14 @@ task :test_html do
     typhoeus: {
       followlocation: true,
       connecttimeout: 10,
-      timeout: 30
+      timeout: 30,
+      headers:
+      {
+        'User-Agent' => 'Mozilla/5.0 (Linux; Android 10; SM-G996U Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36',
+        'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        "Sec-CH-UA": '\"Not_A Brand\";v=\"131\", \"Chromium\";v=\"131\"'
+      }
+      # verbose: true
     },
     hydra: { max_concurrency: 5 }
   }
