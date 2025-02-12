@@ -38,6 +38,7 @@ task :test_html do
     ignore_status_codes: [
       403, # doi returns 403 due to cloudflare challenge
       # 406, # 406 Not Acceptable from bad user-agent from some sites
+      302, # 302 Found or Moved Temporarily
       200 # 200 OK
     ],
     swap_urls: { %r{^/ctlee/} => '/' },
