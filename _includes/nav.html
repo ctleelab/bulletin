@@ -46,6 +46,13 @@
                 <li class="nav-link">
                 {% endif %}
                 <a class="mx-1" href="{{ '/team/' | relative_url }}">team</a></li>
+                {% if page.tags.first == 'joining' %}
+                <li class="nav-link active">
+                {% else %}
+                <li class="nav-link">
+                {% endif %}
+                <a class="mx-1" href="{{ '/misc/join/' | relative_url }}">join us</a>
+                </li>
             </ul>
         </div>
     </div>
