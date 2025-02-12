@@ -1,15 +1,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % UNPUBLISHED
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@article{francis-spatial-modeling,
+@article{lee-cardiolipin-heterogeneity,
     entrysubtype={unpublished},
-    pubstate = {In Press},
+    pubstate = {Submitted},
     shorthand = {-},
 
-    title = {Spatial Modeling Algorithms for Reactions and Transport ({{SMART}}) in Biological Cells},
-    author = {Francis, Emmet A. and Laughlin, Justin and Dokken, Jørgen S. and Finsberg, Henrik and Lee, Christopher T. and Rognes, Marie E. and Rangamani, Padmini},
-    author+an = {1=coauth;2=coauth;5=highlight;6=corresponding;7=corresponding},
-    date = {2024-05-25},
+    title = {Coupling between membrane undulations and lipid curvature leads to transient local enrichment of cardiolipin in mitochondrial membranes},
+    author = {Lee, Christopher T. and Venkatraman, Kailash  and  Budin, Itay  and Rangamani, Padmini},
+    author+an = {1=highlight,corresponding;4=corresponding},
+    date = {2025-01-17},
     journaltitle = {},
     shortjournaltitle = {},
     volume = {},
@@ -17,7 +17,44 @@
     pages = {},
     issn = {},
     doi = {},
-    abstract = {Biological cells rely on precise spatiotemporal coordination of biochemical reactions to control their many functions. Such cell signaling networks have been a common focus for mathematical models, but they remain challenging to simulate, particularly in realistic cell geometries. Herein, we present our software, Spatial Modeling Algorithms for Reaction and Transport (SMART), a package that takes in high-level user specifications about cell signaling networks and molecular transport, and then assembles and solves the associated mathematical and computational systems. SMART uses state-of-the-art finite element analysis, via the FEniCS Project software, to efficiently and accurately resolve cell signaling events over discretized cellular and subcellular geometries. We demonstrate its application to several different biological systems, including YAP/TAZ mechanotransduction, calcium signaling in neurons and cardiomyocytes, and ATP generation in mitochondria. Throughout, we utilize experimentally-derived realistic cellular geometries represented by well-conditioned tetrahedral meshes. These scenarios demonstrate the applicability, flexibility, accuracy and efficiency of SMART across a range of temporal and spatial scales.},
+    abstract = {Organelles such as mitochondria have characteristic shapes that are critical to their function. Recent efforts have revealed that the curvature contributions of individual lipid species can be a factor in the generation of membrane shape in these organelles. Inspired by lipidomics data from yeast mitochondrial membranes, we used Martini coarse-grained molecular dynamics simulations to investigate how lipid composition facilitates membrane shaping. We found that increasing lipid saturation increases bending rigidity while reducing the monolayer spontaneous curvature. We also found that systems containing cardiolipin exhibited decreased bending rigidity and increased spontaneous curvature when compared to bilayers containing its precursor phosphatidylglycerol. This finding contradicts some prior experimental results that suggest that bilayers containing tetraoleoyl cardiolipin have greater rigidity than dioleoyl phosphatidylcholine bilayers. To investigate this discrepancy, we analyzed our simulations for correlations between lipid localization and local curvature. We found that there are transient correlations between curved lipids such as cardiolipin and phosphatidylethanolamine and curvature; these interactions enrich specific bilayer undulatory modes and cause bilayer softening. Furthermore, we show that curvature-localization some lipids such as cardiolipin can influence lipids in the opposing leaflet. These observations add to the emerging evidence that lipid geometric features give rise to local interactions, which can cause membrane compositional heterogeneities. The cross-talk between composition-driven tuning of membrane properties and membrane shape has implications for membrane organization and its related functions.},
+
+    github = {RangamaniLabUCSD/2022-mitochondria-lipidomics-md},
+    zenodo = {10.5281/zenodo.14659872},
+    image = {lee-undulations.webp},
+    pdf = {},
+    supplement = {},
+    website = {},
+
+    related = {},
+    relatedtype = {preprint}
+}
+@online{2025-lipidomics/biorxiv,
+    eprint       = {10.1101/2025.01.17.633669},
+    eprinttype   = {biorxiv}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REVIEWED
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{francis-spatial-modeling,
+    entrysubtype={},
+    pubstate = {},
+    shorthand = {},
+
+    title = {Spatial Modeling Algorithms for Reactions and Transport in Biological Cells},
+    author = {Francis, Emmet A. and Laughlin, Justin G. and Dokken, Jørgen S. and Finsberg, Henrik N. T. and Lee, Christopher T. and Rognes, Marie E. and Rangamani, Padmini},
+    author+an = {1=coauth;2=coauth;5=highlight;6=corresponding;7=corresponding},
+    date = {2024-12-19},
+    journaltitle = {Nature Computational Science},
+    shortjournaltitle = {Nat. Comput. Sci.},
+    volume = {},
+    number = {},
+    pages = {},
+    issn = {2662-8457},
+    doi = {10.1038/s43588-024-00745-x},
+    abstract = {Biological cells rely on precise spatiotemporal coordination of biochemical reactions to control their functions. Such cell signaling networks have been a common focus for mathematical models, but they remain challenging to simulate, particularly in realistic cell geometries. Here we present Spatial Modeling Algorithms for Reactions and Transport (SMART), a software package that takes in high-level user specifications about cell signaling networks and then assembles and solves the associated mathematical systems. SMART uses state-of-the-art finite element analysis, via the FEniCS Project software, to efficiently and accurately resolve cell signaling events over discretized cellular and subcellular geometries. We demonstrate its application to several different biological systems, including yes-associated protein (YAP)/PDZ-binding motif (TAZ) mechanotransduction, calcium signaling in neurons and cardiomyocytes, and ATP generation in mitochondria. Throughout, we utilize experimentally derived realistic cellular geometries represented by well-conditioned tetrahedral meshes. These scenarios demonstrate the applicability, flexibility, accuracy and efficiency of SMART across a range of temporal and spatial scales.},
 
     github = {RangamaniLabUCSD/smart},
     zenodo = {10.5281/zenodo.10019464},
@@ -34,24 +71,21 @@
     eprinttype   = {biorxiv}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% REVIEWED
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 @article{griswold-axon-pearling,
     entrysubtype={},
     pubstate = {},
     shorthand = {},
 
     title = {Membrane mechanics dictate axonal morphology and function},
-    author = { Jacqueline M. Griswold and  Mayte Bonilla-Quintana and Renee Pepper and  Christopher T. Lee and Sumana Raychaudhuri and Siyi Ma and Quan Gan and Sarah Syed and  Cuncheng Zhu and Miriam Bell and Mitsuo Suga and Yuuki Yamaguchi and U. Valentin Nägerl and  Graham Knott and  Padmini Rangamani and Shigeki Watanabe},
-    author+an = {2=coauth;3=coauth;4=highlight,coauth;15=corresponding;16=corresponding},
+    author = { Jacqueline M. Griswold and  Mayte Bonilla-Quintana and Renee Pepper and  Christopher T. Lee and Sumana Raychaudhuri and Siyi Ma and Quan Gan and Sarah Syed and  Cuncheng Zhu and Miriam K. Bell and Mitsuo Suga and Yuuki Yamaguchi and Chéreau, Ronan and U. Valentin Nägerl and  Graham Knott and  Padmini Rangamani and Shigeki Watanabe},
+    author+an = {2=coauth;3=coauth;4=highlight,coauth;16=corresponding;17=corresponding},
     date = {2024-12-02},
     journaltitle = {Nature Neuroscience},
     shortjournaltitle = {Nat. Neurosci.},
     volume = {},
     number = {},
-    pages = {},
-    issn = {},
+    pages = {1--13},
+    issn = {1546-1726},
     doi = {10.1038/s41593-024-01813-1},
 
     abstract = {Axons are thought to be ultrathin membrane cables of a relatively uniform diameter, designed to conduct electrical signals, or action potentials. Here, we demonstrate that unmyelinated axons are not simple cylindrical tubes. Rather, axons have nanoscopic boutons repeatedly along their length interspersed with a thin cable with a diameter of ~60 nm like pearls-on-a-string. These boutons are only ~200 nm in diameter and do not have synaptic contacts or a cluster of synaptic vesicles, hence non-synaptic. Our in silico modeling suggests that axon pearling can be explained by the mechanical properties of the membrane including the bending modulus and tension. Consistent with modeling predictions, treatments that disrupt these parameters like hyper- or hypo-tonic solutions, cholesterol removal, and non-muscle myosin II inhibition all alter the degree of axon pearling, suggesting that axon morphology is indeed determined by the membrane mechanics. Intriguingly, neuronal activity modulates the cholesterol level of plasma membrane, leading to shrinkage of axon pearls. Consequently, the conduction velocity of action potentials becomes slower. These data reveal that biophysical forces dictate axon morphology and function, and that modulation of membrane mechanics likely underlies plasticity of unmyelinated axons.},
@@ -71,6 +105,7 @@
     eprint       = {10.1101/2023.07.20.549958},
     eprinttype   = {biorxiv}
 }
+
 
 @article{venkatraman-lipid-curvature,
     title = {Setting the Curve: The Biophysical Properties of Lipids in Mitochondrial Form and Function},
@@ -105,7 +140,7 @@
     author = {Lee, Christopher T. and Rangamani, Padmini},
     author+an = {1=corresponding;2=corresponding},
     editor = {Deserno, Markus and Baumgart, Tobias},
-    date = {2024-07-18},
+    date = {2024-07-16},
     series = {Methods in Enzymology},
     volume = {701},
     pages = {387-424},
@@ -129,7 +164,7 @@
 
 @article{venkatraman-mito-cristae-lipidome,
     title = {Cristae formation is a mechanical buckling event controlled by the inner membrane lipidome},
-    author = {Venkatraman, Kailash and Lee, Christopher T. and Garcia, Guadalupe C. and Mahapatra, Arijit and Perkins, Guy and Kim, Keun-Young and Pasolli, Hilda Amalia and Phan, Sebastien and Lippincott-Schwartz, Jennifer and Ellisman, Mark and Rangamani, Padmini and Budin, Itay},
+    author = {Venkatraman, Kailash and Lee, Christopher T. and Garcia, Guadalupe C. and Mahapatra, Arijit and Perkins, Guy and Kim, Keun-Young and Pasolli, Hilda Amalia and Phan, Sebastien and Lippincott-Schwartz, Jennifer and Ellisman, Mark H. and Rangamani, Padmini and Budin, Itay},
     author+an = {2=highlight,coauth;3=coauth;4=coauth;11=corresponding;12=corresponding},
     date = {2023-12-11},
     journaltitle = {The EMBO Journal},
@@ -194,7 +229,7 @@
 
 @article{lee-biophysics-synaptic-plasticity,
     title = {Biophysical modeling of synaptic plasticity},
-    author = {Lee, Christopher T. and Bell, Miriam and Bonilla-Quintana, Mayte and Rangamani, Padmini},
+    author = {Lee, Christopher T. and Bell, Miriam K. and Bonilla-Quintana, Mayte and Rangamani, Padmini},
     author+an = {1=highlight; 4=corresponding},
     date = {2024-02-21},
     journaltitle = {Annual Review of Biophysics},
@@ -320,7 +355,7 @@
 
 @article{lopez-pena-azurin,
     title = {Role of the {{Triplet State}} and {{Protein Dynamics}} in the {{Formation}} and {{Stability}} of the {{Tryptophan Radical}} in an {{Apoazurin Mutant}}},
-    author = {López-Peña, Ignacio and Lee, Christopher T and Rivera, Joel J. and Tauber, Michael J. and Kim, Judy E.},
+    author = {López-Peña, Ignacio and Lee, Christopher T. and Rivera, Joel J. and Tauber, Michael J. and Kim, Judy E.},
     author+an = {2=highlight; 5=corresponding},
 
     volume = {126}, 
@@ -349,7 +384,7 @@
 }
 
 @article{zhu-mem3dg,
-    author = {Zhu, C. and Lee, C. T. and Rangamani, P.},
+    author = {Zhu, Cuncheng and Lee, Christopher T. and Rangamani, Padmini},
     author+an = {2=highlight,corresponding; 3=corresponding},
     title = {{Mem3DG: An open-source software framework for 3-D membrane mechanochemical dynamics using discrete differential geometry on triangulated meshes}},
     date = {2022-09-14},
@@ -383,7 +418,7 @@
 
 @article{bell-stochastic-dendritic-spine-calcium,
     title = {Dendritic Spine Morphology Regulates Calcium-Dependent Synaptic Weight Change},
-    author = {Bell, M. K. and Holst, M. V. and Lee, C. T. and Rangamani, P.},
+    author = {Bell, Miriam K. and Holst, Maven V. and Lee, Christopher T. and Rangamani, Padmini},
     author+an    = {1=coauth;2=coauth;3=highlight;4=corresponding}, 
     date = {2022-07-01},
     journaltitle = {J. Gen. Physiol.},
@@ -483,7 +518,7 @@
 
 @article{hempel-markov-decomposition,
     title        = {{Independent Markov Decomposition: Towards modeling kinetics of biomolecular complexes}},
-    author       = {Hempel, Tim and del Razo, Mauricio J and Lee, Christopher T and Taylor, Bryn C and Amaro, Rommie E. and Noé, Frank},
+    author       = {Hempel, Tim and del Razo, Mauricio J. and Lee, Christopher T. and Taylor, Bryn C. and Amaro, Rommie E. and Noé, Frank},
     author+an    = {2=coauth; 3=highlight,coauth; 4=coauth; 5=corresponding; 6=corresponding},
     date         = {2021-07-28},
     journaltitle = {Proc. Natl. Acad. Sci.},
@@ -543,7 +578,7 @@
 
 @article{lee-gamer2,
     title        = {{{3D}} Mesh Processing Using {{GAMer}} 2 to Enable Reaction-Diffusion Simulations in Realistic Cellular Geometries},
-    author       = {Lee, Christopher T and Laughlin, Justin G and Angliviel de La Beaumelle, Nils and Amaro, Rommie E and McCammon, J Andrew and Ramamoorthi, Ravi and Holst, Michael J and Rangamani, Padmini},
+    author       = {Lee, Christopher T. and Laughlin, Justin G. and Angliviel de La Beaumelle, Nils and Amaro, Rommie E. and McCammon, J. Andrew and Ramamoorthi, Ravi and Holst, Michael J. and Rangamani, Padmini},
     author+an    = {1=coauth,highlight; 2=coauth; 8=corresponding},
     date         = {2020-04-06},
     journaltitle      = {PLOS Comp. Biol.},
@@ -581,7 +616,7 @@
 
 @article{vasan-ml-cell-sims,
     title        = {{Applications and Challenges of Machine Learning to Enable Realistic Cellular Simulations}},
-    author       = {Vasan, Ritvik and Rowan, Meagan P and  Lee, Christopher T and Johnson, Gregory R and Rangamani, Padmini and Holst, Michael},
+    author       = {Vasan, Ritvik and Rowan, Meagan P. and  Lee, Christopher T. and Johnson, Gregory R. and Rangamani, Padmini and Holst, Michael},
     author+an    = {3=highlight; 6=corresponding},
     date         = {2021-01-21},
     journaltitle      = {Front. Phys.},
@@ -611,7 +646,7 @@
 
 @article{lee-mesh-platform,
     title        = {An Open Source Mesh Generation Platform for Biophysical Modeling Using Realistic Cellular Geometries},
-    author       = {Lee, Christopher T and Laughlin, Justin G and Moody, John B and Amaro, Rommie E and McCammon, J Andrew and Holst, Michael J and Rangamani, Padmini},
+    author       = {Lee, Christopher T. and Laughlin, Justin G. and Moody, John B and Amaro, Rommie E. and McCammon, J. Andrew and Holst, Michael J. and Rangamani, Padmini},
     author+an    = {1=highlight,corresponding; 7=corresponding},
     date         = {2020-03-10},
     journaltitle      = {Biophys. J.},
@@ -682,7 +717,7 @@
 }
 @article{taylor-ccr2,
     title        = {{Structural Basis for Ligand Modulation of the CCR2 Conformational Landscape}},
-    author       = {Taylor, Bryn C and Lee, Christopher T and Amaro, Rommie E},
+    author       = {Taylor, Bryn C. and Lee, Christopher T. and Amaro, Rommie E.},
     author+an    = {2=highlight; 3=corresponding},
     date         = {2019-04-23},
     journaltitle     = {Proc. Natl. Acad. Sci.},
@@ -715,7 +750,7 @@
 
 @article{jagger-bcd-milestoning,
     title        = {Quantitative Ranking of β-cyclodextrin Ligand Binding Kinetics With SEEKR, a Hybrid MD/BD/Milestoning Approach},
-    author       = {Jagger, Benjamin R and Lee, Christopher T and Amaro, Rommie E},
+    author       = {Jagger, Benjamin R. and Lee, Christopher T. and Amaro, Rommie E.},
     author+an    = {2=highlight; 3=corresponding},
     date         = {2018-09-06},
     journaltitle     = {J. Phys. Chem. Lett.},
@@ -747,7 +782,7 @@
 }
 @article{lee-exascale-computing,
     title        = {Exascale Computing: A New Dawn for Computational Biology},
-    author       = {Lee, Christopher T and Amaro, Rommie E},
+    author       = {Lee, Christopher T. and Amaro, Rommie E.},
     author+an    = {1=highlight; 2=corresponding},
     date         = {2018-08-30},
     journaltitle      = {Comput. Sci. Eng.},
@@ -775,7 +810,7 @@
 }
 @article{votapka-milestoning-permeability,
     title        = {{Two Relations to Estimate Membrane Permeability Using Milestoning}},
-    author       = {Votapka, Lane William and Lee, Christopher T and Amaro, Rommie E},
+    author       = {Votapka, Lane William and Lee, Christopher T. and Amaro, Rommie E.},
     author+an    = {1=coauth;2=highlight,coauth; 3=corresponding},
     date         = {2016-08-25},
     journaltitle     = {J. Phys. Chem. B},
@@ -860,7 +895,7 @@
 }
 @article{gray-known-structure-unknown-function,
     title        = {Known Structure, Unknown Function: An Inquiry-Based Undergraduate Biochemistry Laboratory Course},
-    author       = {Gray, Cynthia and Price, Carol W and Lee, Christopher T and Dewald, Alison H and Cline, Matthew A and McAnany, Charles E and Columbus, Linda and Mura, Cameron},
+    author       = {Gray, Cynthia and Price, Carol W. and Lee, Christopher T. and Dewald, Alison H. and Cline, Matthew A. and McAnany, Charles E. and Columbus, Linda and Mura, Cameron},
     author+an    = {1=coauth; 2=coauth; 3=highlight; 7=corresponding; 8=corresponding},
     date         = {2015-07-08},
     journaltitle      = {Biochem. Mol. Biol. Educ.},
