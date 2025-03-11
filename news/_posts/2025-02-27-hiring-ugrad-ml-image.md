@@ -8,7 +8,7 @@ job: true
 ---
 
 
-Positions for [Undergraduate Research](#undergraduate researcher) are available immediately in the ctleelab at the University of California San Diego. 
+Positions for [Undergraduate Research](#undergraduate-researcher) are available immediately in the ctleelab at the University of California San Diego. 
 Details for the position follow.
 
 ### Undergraduate Researcher
