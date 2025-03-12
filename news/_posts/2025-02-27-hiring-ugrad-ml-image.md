@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Opening for a postdoctoral scholar to contribute to investigations of lipid-protein interactions using molecular simulations
+title: Undergraduate research opportunities focusing on investigations of nuclear shape transitions
 author: Christopher T. Lee
 image:
 link:
@@ -8,66 +8,74 @@ job: true
 ---
 
 
-A position for a [Postdoctoral Scholar](#postdoctoral-scholar) is available immediately in the ctleelab at the University of California San Diego. 
+Positions for [Undergraduate Research](#undergraduate-researcher) are available immediately in the ctleelab at the University of California San Diego. 
 Details for the position follow.
 
+### Undergraduate Researcher
 
-### Postdoctoral Scholar
+The [ctleelab](https://labs.biology.ucsd.edu/ctlee/) has openings for undergraduate researchers interested in developing methods for analyzing and running physical simulations from 3D fluorescence imaging datasets.
+In particular we hope to:
+- investigate pathways in the transition from monomorphonuclear to polymorphonuclear cells during differentiation using data-driven and biophysical models
+- enable exploration of the consequences of nuclear shape transitions by prototyping methods for generating geometric meshes from fluorescence data
 
-The [ctleelab](https://labs.biology.ucsd.edu/ctlee/) is recruiting a postdoc in the fields of computational biophysics and molecular modeling.
-Successful candidates will have a strong interest in applying molecular simulations to study how membrane organization influences organelle shape.
+**Relevant Papers:**
+- **Biological context:** Patta, I; et al.; Nuclear Morphology Is Shaped by Loop-Extrusion Programs. Nature 2024, 627 (8002), 196–203. https://doi.org/10.1038/s41586-024-07086-9.
+- **Image processing using differentiable rendering:** Ichbiah, S.; et al. Differentiable Rendering for 3D Fluorescence Microscopy. arXiv March 18, 2023. https://doi.org/10.48550/arXiv.2303.10440.
+- **Mesh generation:** Lee, CT; Laughlin, JG; et al. 3D Mesh Processing Using GAMer 2 to Enable Reaction-Diffusion Simulations in Realistic Cellular Geometries. PLOS Computational Biology 2020, 16 (4), e1007756. https://doi.org/10.1371/journal.pcbi.1007756.
+- **Physical simulations:** Francis, EA; Laughlin, JG; et al.; Spatial Modeling Algorithms for Reactions and Transport in Biological Cells. Nat Comput Sci 2024. https://doi.org/10.1038/s43588-024-00745-x.
 
-The goal of the lab is to develop and employ new computational tools, approaches, and strategies to integrate experimental data into biophysical simulations.
-Using these simulations we aim to generate mechanistic insight into how organization-structure-function relationships at the subcellular scale governs membrane ultrastructure generating processes.
-
+Candidates should plan to commit to an initial 1 month trial period after which we will discuss research fit and options for course credit etc.
 
 #### Responsibilities
 
-This role advances the research aims of the ctleelab through a combination of project work and collaborations within the group and our collaborators. 
-The postdoctoral scholar is expected to develop fellowship and other independent projects with the lab's support. 
+This role advances the research aims of the ctleelab through supervised project development and individual exploration.
+Candidates can expect to:
 
-- Development of molecular models and simulation datasets
-- Prototyping of analysis workflows to support multiscale modeling efforts
-- Supervision and training of other researchers in molecular simulations and scientific computing
-- Development of scientific products including scripts and softwares
-- Preparation of manuscripts, fellowship and grant applications in collaboration with the PI
-- Attend and present research at group, local and national meetings
+- Prototype analysis workflows for processing time-series of fluorescence micrographs
+    - including mesh generation to support physical simulations
+- Explore conventional and AI/ML based methods for featurization of organelle shapes
+- Work closely with PI and supervising postdoctoral scholar or graduate student
+- Participate in group meetings and other activities
+- Read and discuss initially assigned primary literature leading to self-driven exploration
+- Commit >15 hours a week to research in the lab
 
 #### Qualifications
 ##### Minimum Qualifications
 
-- PhD in computational biophysics, computer science, physics or related field
-- Fluency in at least one high-level programming language (e.g., Python)
-- Expertise in molecular dynamics simulations 
-- Knowledge of statistical mechanics, membrane biology and structural biology
-- Proficiency with high performance computing
+- Full-time student at UCSD pursuing an undergraduate degree in computer science, data science, mathematics, biology, chemistry or related studies
+- Experienced in at least one high-level programming language (e.g., Python)
+- Prior knowledge of calculus and linear algebra
+- Interest in methods and algorithms for analysis of image timeseries
 - Motivated to learn new skills and technologies and collaborate within an existing team's practices
 - Excellent written and verbal communication skills
 
 ##### Preferred Qualifications
-- Applicants with prior exposure to free-energy calculations and continuum membrane mechanics are particularly encouraged to apply
-- Familiarity with version control and other software development best practices
-- Experience configuring and deploying analyses in a high-throughput manner
 
+- Background in basic concepts of biology
+- Experience with image processing libraries and tools (e.g., ImageJ, Pillow, OpenCV)
+- Experience in a low-level language (e.g., C++)
+- Familiarity with version control and other software development best practices
 
 #### Application Requirements
 
-The position is available immediately with flexible starting dates. 
-Informal inquiries are welcome. 
-Applications will be accepted until the position is filled.
+Application will be reviewed on a rolling basis until the positions are filled with an initial screening by April 11, 2025. 
+Informal inquiries are welcome.
 The ctleelab works on interdisciplinary topics and recognizes that complementary backgrounds facilitate our science and goals.
 As such, applicants with unique and complementary expertise to our ongoing team are particularly encouraged to apply.
 
-
 Please contact Chris by email (ctlee<span style="display:none">obfuscate</span>@ucsd.edu) with the following.
-1. cover letter that includes the names and contacts for two references and a short statement of research interests and envisioned interactions with the lab 
-2. a current CV
-3. code samples or links to published/distributed code 
+1. statement of interest
+    - **Please highlight your relevant background and interest with respect to the roles and qualifications outlined above** 
+    - (optional) include contact information for up to two references. Do not have letters sent
+2. a current CV/Resume
+3. a copy of your informal transcript or summary of relevant course work
+4. code samples or links to published/distributed code
 
 To aid in applicant review, a coding sample is requested. 
 We are happy to review whatever you are most proud of (in any programming language). 
 If you do not have code that can be publicly shared, that is okay. 
 Please apply anyway and just let us know that this is not available.
+
 
 ### About UC San Diego
 

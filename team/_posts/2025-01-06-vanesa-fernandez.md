@@ -11,7 +11,7 @@ website:
 image: /images/team/vanesa-fernandez.webp
 cv: 
 email: vfernandezavalos@ucsd.edu
-alumni: false
+alumni: true
 ---
 
 I am a Biological Science PhD student with a background in clinical and experimental neuroscience.
