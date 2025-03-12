@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Undergraduate research opportunities focusing on investigations of nuclear shape deformations
+title: Undergraduate research opportunities focusing on investigations of nuclear shape transitions
 author: Christopher T. Lee
 image:
 link:
@@ -18,6 +18,12 @@ In particular we hope to:
 - investigate pathways in the transition from monomorphonuclear to polymorphonuclear cells during differentiation using data-driven and biophysical models
 - enable exploration of the consequences of nuclear shape transitions by prototyping methods for generating geometric meshes from fluorescence data
 
+**Relevant Papers:**
+- **Biological context:** Patta, I; et al.; Nuclear Morphology Is Shaped by Loop-Extrusion Programs. Nature 2024, 627 (8002), 196–203. https://doi.org/10.1038/s41586-024-07086-9.
+- **Image processing using differentiable rendering:** Ichbiah, S.; et al. Differentiable Rendering for 3D Fluorescence Microscopy. arXiv March 18, 2023. https://doi.org/10.48550/arXiv.2303.10440.
+- **Mesh generation:** Lee, CT; Laughlin, JG; et al. 3D Mesh Processing Using GAMer 2 to Enable Reaction-Diffusion Simulations in Realistic Cellular Geometries. PLOS Computational Biology 2020, 16 (4), e1007756. https://doi.org/10.1371/journal.pcbi.1007756.
+- **Physical simulations:** Francis, EA; Laughlin, JG; et al.; Spatial Modeling Algorithms for Reactions and Transport in Biological Cells. Nat Comput Sci 2024. https://doi.org/10.1038/s43588-024-00745-x.
+
 Candidates should plan to commit to an initial 1 month trial period after which we will discuss research fit and options for course credit etc.
 
 #### Responsibilities
@@ -25,7 +31,7 @@ Candidates should plan to commit to an initial 1 month trial period after which 
 This role advances the research aims of the ctleelab through supervised project development and individual exploration.
 Candidates can expect to:
 
-- Prototype analysis workflows for processing fluorescence micrographs in time
+- Prototype analysis workflows for processing time-series of fluorescence micrographs
     - including mesh generation to support physical simulations
 - Explore conventional and AI/ML based methods for featurization of organelle shapes
 - Work closely with PI and supervising postdoctoral scholar or graduate student
