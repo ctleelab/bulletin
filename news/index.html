@@ -97,6 +97,7 @@ category: news
 				{% endif %}
 				{% endif %}
 				<div class="post">
+					{% if post.job == false %}<i>Position(s) have been filled.</i>{% endif %}
 					{{ post.excerpt | strip_html }} 
 					{% if post.content.size > post.excerpt.size %}
 						<a href="{{ post.url | relative_url }}" class="">Read more...</a>	
