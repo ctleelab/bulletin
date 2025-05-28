@@ -145,7 +145,15 @@ layout: default
 
 		{% for paper in site.categories.papers %}
 		{% if paper.authors contains searchstring %}
-		{% assign papersq = true %}
+		{% assign include = true %}
+			{% for doi in member.excluded-papers %}
+				{% if paper.doi == doi or paper.biorxiv == doi or paper.arxiv == doi or paper.chemarxiv == doi %}
+					{% assign include = false %}
+				{% endif %}
+			{% endfor %}
+			{% if include %}
+				{% assign papersq = true %}
+			{% endif %}
 		{% endif %}
 		{% endfor %}
 
