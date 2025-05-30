@@ -11,7 +11,7 @@ website:
 image: /images/team/woojung-kim.webp
 cv: 
 email: wok009@ucsd.edu 
-alumni: false
+alumni: true 
 ---
 
 Woojung is a PhD student in UCSD's Chemical Biology Track within the [Chemistry Department](https://chemistryandbiochemistry.ucsd.edu/). 
