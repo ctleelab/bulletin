@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Cailyn Sakurai
-position: Rotation Student
+position: Graduate Student
 handle: casakurai
 twitter: 
 github: cailynsak24
