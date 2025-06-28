@@ -194,16 +194,28 @@ def process_bib():
             if "entrysubtype" in entry:
                 ## PARSE FOR PREPRINTS
                 if entry["entrysubtype"] == "unpublished":
-                    d.update(
-                        {
-                            "INPREP": True,
-                            "JOURNAL": f"'{entry['pubstate']}'",
-                            "DOI": "",
-                            "CITATION": "",
-                            "STATUS": f"'{entry['pubstate']}'",
-                            "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} {entry['pubstate']}",
-                        }
-                    )
+                    if entry["pubstate"] == "Accepted" or entry["pubstate"] == "In Press":
+                        d.update(
+                            {
+                                "INPREP": True,
+                                "JOURNAL": f"'{entry['pubstate']} {entry['shortjournaltitle']}'",
+                                "DOI": "",
+                                "CITATION": "",
+                                "STATUS": f"'{entry['pubstate']}'",
+                                "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} {entry['pubstate']}",
+                            }
+                        )
+                    else:
+                        d.update(
+                            {
+                                "INPREP": True,
+                                "JOURNAL": f"'{entry['pubstate']}'",
+                                "DOI": "",
+                                "CITATION": "",
+                                "STATUS": f"'{entry['pubstate']}'",
+                                "SHORTCITE": f"{authors[0].last}{' et al.,' if len(authors) > 0 else ''} {date.strftime('%Y')} {entry['pubstate']}",
+                            }
+                        )
                 elif entry["entrysubtype"] == "":
                     parse_published()
                 else:
