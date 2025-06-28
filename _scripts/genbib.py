@@ -194,7 +194,7 @@ def process_bib():
             if "entrysubtype" in entry:
                 ## PARSE FOR PREPRINTS
                 if entry["entrysubtype"] == "unpublished":
-                    if entry["pubstate"] == "Accepted" or entry["pubstate"] == "In Press":
+                    if entry["pubstate"] in ("Accepted", "In Press"):
                         d.update(
                             {
                                 "INPREP": True,
