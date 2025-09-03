@@ -11,7 +11,7 @@ website:
 image: /images/team/diana-ramirez-morales.webp
 cv: 
 email: 
-alumni: false
+alumni: true 
 excluded-papers: 
 ---
 
