@@ -11,7 +11,7 @@ website:
 image: /images/team/ana-sofia-pimentel.webp
 cv: 
 email: 
-alumni: false
+alumni: true
 excluded-papers: 
 ---
 
