@@ -5,7 +5,7 @@ position: Postdoctoral Researcher
 handle: hakenuwa
 twitter: 
 github: oakenuwa
-scholar: Hpboy8YAAAAJ
+scholar: LgvVNp0AAAAJ
 orcid: 
 website: 
 image: /images/team/honor-akenuwa.webp
