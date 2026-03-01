@@ -11,7 +11,7 @@ job: true
 Positions for [Undergraduate Research](#undergraduate-researcher) are available immediately in the ctleelab at the University of California San Diego. 
 Details for the position follow.
 
-### Undergraduate Researcher
+## Undergraduate Researcher
 
 The [ctleelab](https://labs.biology.ucsd.edu/ctlee/) has openings for undergraduate researchers interested in developing methods for analyzing and running physical simulations from 3D fluorescence imaging datasets.
 In particular we hope to:
@@ -26,7 +26,7 @@ In particular we hope to:
 
 Candidates should plan to commit to an initial 1 month trial period after which we will discuss research fit and options for course credit etc.
 
-#### Responsibilities
+### Responsibilities
 
 This role advances the research aims of the ctleelab through supervised project development and individual exploration.
 Candidates can expect to:
@@ -39,8 +39,8 @@ Candidates can expect to:
 - Read and discuss initially assigned primary literature leading to self-driven exploration
 - Commit >15 hours a week to research in the lab
 
-#### Qualifications
-##### Minimum Qualifications
+### Qualifications
+#### Minimum Qualifications
 
 - Full-time student at UCSD pursuing an undergraduate degree in computer science, data science, mathematics, biology, chemistry or related studies
 - Experienced in at least one high-level programming language (e.g., Python)
@@ -49,14 +49,14 @@ Candidates can expect to:
 - Motivated to learn new skills and technologies and collaborate within an existing team's practices
 - Excellent written and verbal communication skills
 
-##### Preferred Qualifications
+#### Preferred Qualifications
 
 - Background in basic concepts of biology
 - Experience with image processing libraries and tools (e.g., ImageJ, Pillow, OpenCV)
 - Experience in a low-level language (e.g., C++)
 - Familiarity with version control and other software development best practices
 
-#### Application Requirements
+### Application Requirements
 
 Application will be reviewed on a rolling basis until the positions are filled with an initial screening by April 11, 2025. 
 Informal inquiries are welcome.
@@ -77,7 +77,7 @@ If you do not have code that can be publicly shared, that is okay.
 Please apply anyway and just let us know that this is not available.
 
 
-### About UC San Diego
+## About UC San Diego
 
 The University of California, San Diego is an Equal Opportunity/Affirmative Action Employer advancing inclusive excellence. 
 All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, covered veteran status, or other protected categories covered by the UC nondiscrimination policy.
