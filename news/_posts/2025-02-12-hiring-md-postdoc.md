@@ -12,7 +12,7 @@ A position for a [Postdoctoral Scholar](#postdoctoral-scholar) is available imme
 Details for the position follow.
 
 
-### Postdoctoral Scholar
+## Postdoctoral Scholar
 
 The [ctleelab](https://labs.biology.ucsd.edu/ctlee/) is recruiting a postdoc in the fields of computational biophysics and molecular modeling.
 Successful candidates will have a strong interest in applying molecular simulations to study how membrane organization influences organelle shape.
@@ -21,7 +21,7 @@ The goal of the lab is to develop and employ new computational tools, approaches
 Using these simulations we aim to generate mechanistic insight into how organization-structure-function relationships at the subcellular scale governs membrane ultrastructure generating processes.
 
 
-#### Responsibilities
+### Responsibilities
 
 This role advances the research aims of the ctleelab through a combination of project work and collaborations within the group and our collaborators. 
 The postdoctoral scholar is expected to develop fellowship and other independent projects with the lab's support. 
@@ -33,8 +33,8 @@ The postdoctoral scholar is expected to develop fellowship and other independent
 - Preparation of manuscripts, fellowship and grant applications in collaboration with the PI
 - Attend and present research at group, local and national meetings
 
-#### Qualifications
-##### Minimum Qualifications
+### Qualifications
+#### Minimum Qualifications
 
 - PhD in computational biophysics, computer science, physics or related field
 - Fluency in at least one high-level programming language (e.g., Python)
@@ -44,13 +44,13 @@ The postdoctoral scholar is expected to develop fellowship and other independent
 - Motivated to learn new skills and technologies and collaborate within an existing team's practices
 - Excellent written and verbal communication skills
 
-##### Preferred Qualifications
+#### Preferred Qualifications
 - Applicants with prior exposure to free-energy calculations and continuum membrane mechanics are particularly encouraged to apply
 - Familiarity with version control and other software development best practices
 - Experience configuring and deploying analyses in a high-throughput manner
 
 
-#### Application Requirements
+### Application Requirements
 
 The position is available immediately with flexible starting dates. 
 Informal inquiries are welcome. 
@@ -69,7 +69,7 @@ We are happy to review whatever you are most proud of (in any programming langua
 If you do not have code that can be publicly shared, that is okay. 
 Please apply anyway and just let us know that this is not available.
 
-### About UC San Diego
+## About UC San Diego
 
 The University of California, San Diego is an Equal Opportunity/Affirmative Action Employer advancing inclusive excellence. 
 All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, covered veteran status, or other protected categories covered by the UC nondiscrimination policy.
