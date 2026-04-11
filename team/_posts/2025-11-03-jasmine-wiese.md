@@ -1,7 +1,7 @@
 ---
 layout: member
 title: Jasmine Wiese 
-position: Rotation Student
+position: Graduate Student
 handle: jawiese
 twitter: 
 github: jaskw
