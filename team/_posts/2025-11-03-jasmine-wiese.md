@@ -14,4 +14,7 @@ email: jawiese@ucsd.edu
 alumni: false
 ---
 
-Jasmine earned her B.S. in Chemistry from Carnegie Mellon University in 2023. She then worked in the Institute for Medical Engineering and Science at MIT, where she investigated the biophysical mechanisms of tuberculosis transmission. As a Biochemistry and Molecular Biophysics graduate student in the ctlee lab, she hopes to better understand and model the molecular drivers of morphological changes in cells.
+Jasmine earned her B.S. in Chemistry from Carnegie Mellon University in 2023.
+She then worked at MIT’s Institute for Medical Engineering and Science, where she investigated the biophysical mechanisms of tuberculosis transmission.
+She is now a graduate student in the Department of Biochemistry and Molecular Biophysics.
+In the ctleelab, her research focuses on how proteins interact with and respond to membrane environments, particularly how membrane organization influences protein behavior.
