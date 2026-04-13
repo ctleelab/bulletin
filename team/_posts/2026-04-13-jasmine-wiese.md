@@ -1,12 +1,12 @@
 ---
 layout: member
 title: Jasmine Wiese 
-position: Rotation Student
+position: Graduate Student
 handle: jawiese
 twitter: 
 github: jaskw
-scholar: 
-orcid: 
+scholar: hWHL1l0AAAAJ
+orcid: 0009-0005-1245-3247
 website: 
 image: /images/team/jasmine-wiese.webp
 cv: 
