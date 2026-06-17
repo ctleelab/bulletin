@@ -56,5 +56,7 @@ projects:
   - 
     repo: RangamaniLabUCSD/smart
     branch: development
-
+  -
+    repo: ctleelab/MemDMA
+    branch: master
   
