@@ -1,14 +1,18 @@
 source 'https://rubygems.org'
 
+gem 'csv'
+gem 'faraday-retry'
+gem 'ostruct'
+
 # jekyll
-gem "jekyll", "4.3.3"
+gem 'jekyll', '4.3.3'
 
 # katex
-gem "execjs"
+gem 'execjs'
 
 # octokit
-gem 'octokit'
 gem 'netrc'
+gem 'octokit'
 
 # fetching URIs
 gem 'down'
@@ -25,7 +29,7 @@ gem 'jekyll-gzip'
 
 group :test do
   # Automating builds
-  gem 'rake'
   gem 'html-proofer'
+  gem 'rake'
   gem 'rubocop'
 end
