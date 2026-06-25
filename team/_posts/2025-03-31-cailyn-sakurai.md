@@ -1,6 +1,7 @@
 ---
 layout: member
-title: Cailyn Sakurai
+title: Cailyn M. Sakurai
+preferred-name: Cailyn Sakurai
 position: Graduate Student
 handle: casakurai
 twitter: 
@@ -12,6 +13,7 @@ image: /images/team/cailyn-sakurai.webp
 cv: 
 email: casakurai@ucsd.edu 
 alumni: false
+excluded-papers:
 ---
 
 I am a Biological Sciences PhD student with a background in molecule biology and biochemistry. 

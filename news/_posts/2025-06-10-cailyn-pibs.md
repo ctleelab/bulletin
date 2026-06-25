@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cailyn selected as Pathways in Biological Sciences Trainee
+title: Cailyn becomes fellow of the Pathways in Biological Sciences Training Grant
 author: Christopher T. Lee
 image:
 link:
