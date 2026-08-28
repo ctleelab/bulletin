@@ -25,3 +25,6 @@ _site
 .vscode
 
 projects/**
+# pixi environments
+.pixi/*
+!.pixi/config.toml
