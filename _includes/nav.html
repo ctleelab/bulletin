@@ -2,7 +2,7 @@
     <div class="container">
         {% if page.categories.first != 'home' %}
         <a class="navbar-brand" href="{{ '/' | relative_url }}">
-            <img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" title="ctleelab logo" alt="ctleelab logo" src="{{ '/images/logo.svg' | relative_url }}">
+            <img class="logo navbar-brand d-inline-block align-top ms-0 me-1" title="ctleelab logo" alt="ctleelab logo" src="{{ '/images/logo.svg' | relative_url }}">
             ctleelab
         </a>
         {% else %}
@@ -12,7 +12,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-pills ml-auto">
+            <ul class="navbar-nav nav-pills ms-auto">
                 {% if page.categories.first == 'news' %}
                 <li class="nav-link active">
                 {% else %}

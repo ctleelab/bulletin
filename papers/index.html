@@ -50,7 +50,7 @@ categories:
       </div>
       {% if paper.image %}
         <a href="{{ paper.url | relative_url }}">
-          <img class="ml-1" width=120 class="media-object" alt="graphical abstract" src="{{ '/images/papers/' | append: paper.image | relative_url }}">
+          <img class="ms-1" width=120 alt="graphical abstract" src="{{ '/images/papers/' | append: paper.image | relative_url }}">
         </a>
       {% endif %}
     </div>
