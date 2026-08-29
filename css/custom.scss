@@ -66,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 300;
+	font-weight: 900;
 	/* Museo */
 }
 
@@ -116,19 +116,16 @@ b, strong {
 
 .navbar-brand {
 	font-size: 30px;
-	font-weight: 100;
+	font-weight: 600;
   color: $gray-light;
-	/* Museo */
 }
 .navbar-nav {
 	font-size: 30px;
-	font-weight: 100;
-	/* Museo */
+	font-weight: 300;
 }
 .navbar-text {
 	font-size: 15px;
 	font-weight: 300;
-	/* Museo */
 }
 
 .bg-navbar {
@@ -162,16 +159,16 @@ b, strong {
 /* headings */
 
 .bigtitle {
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 55px;
-	font-weight: 100;
+	font-weight: 600;
 	/* Museo */
 }
 
 .title {
 	font-size: 36px;
 	line-height: 40px;
-	font-weight: 100;
+	font-weight: 300;
 	/* Museo */
 }
 

@@ -11,7 +11,7 @@ website:
 image: /images/team/montserrat-campa.webp
 cv: 
 email: 
-alumni: false
+alumni: true
 ---
 I am a medical student with a strong interest in biochemistry. 
 Previously, I worked in the biochemistry lab at my university, where I studied modified islet amyloid polypeptide that does not form amyloid plaques, in hopes of finding a possible treatment for type 2 diabetes. 
