@@ -1,4 +1,9 @@
+@use "sass:math";
+
 $primary: #DD2D2D;
+$link-decoration: none;
+$link-hover-decoration: underline;
+$grid-gutter-width: 1.875rem;
 $gray: #555;
 $gray-light: #767676;
 $line-height-base: 1.6;
@@ -22,12 +27,12 @@ $nav-pills-link-active-bg: #e7e7e7;
 $nav-pills-border-radius: 0px;
 $list-inline-padding: 1rem;
 
-h1, .h1 { font-size: floor($font-size-base * 2.50); } /* ~34px */
-h2, .h2 { font-size: floor($font-size-base * 2.15); } /* ~30px */
-h3, .h3 { font-size: ceil($font-size-base * 1.70); }  /* ~24px */
-h4, .h4 { font-size: ceil($font-size-base * 1.25); }  /* ~18px */
+h1, .h1 { font-size: math.floor($font-size-base * 2.50); } /* ~34px */
+h2, .h2 { font-size: math.floor($font-size-base * 2.15); } /* ~30px */
+h3, .h3 { font-size: math.ceil($font-size-base * 1.70); }  /* ~24px */
+h4, .h4 { font-size: math.ceil($font-size-base * 1.25); }  /* ~18px */
 h5, .h5 { font-size: $font-size-base; }
-h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
+h6, .h6 { font-size: math.ceil($font-size-base * 0.85); }  /* ~12px */
 
 // 20px gutter
 .reduced-gutter.row {
@@ -61,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 300;
+	font-weight: 900;
 	/* Museo */
 }
 
@@ -80,8 +85,16 @@ b, strong {
   font-weight: bold;
 }
 
-/* logo */
+// Bootstrap 5 removed the media object component
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+.media-body {
+  flex: 1;
+}
 
+/* logo */
 .logo {
 	width: 50px;
 	height: 50px;
@@ -103,19 +116,16 @@ b, strong {
 
 .navbar-brand {
 	font-size: 30px;
-	font-weight: 100;
+	font-weight: 600;
   color: $gray-light;
-	/* Museo */
 }
 .navbar-nav {
 	font-size: 30px;
-	font-weight: 100;
-	/* Museo */
+	font-weight: 300;
 }
 .navbar-text {
 	font-size: 15px;
 	font-weight: 300;
-	/* Museo */
 }
 
 .bg-navbar {
@@ -149,16 +159,16 @@ b, strong {
 /* headings */
 
 .bigtitle {
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 55px;
-	font-weight: 100;
+	font-weight: 600;
 	/* Museo */
 }
 
 .title {
 	font-size: 36px;
 	line-height: 40px;
-	font-weight: 100;
+	font-weight: 300;
 	/* Museo */
 }
 
@@ -179,8 +189,7 @@ b, strong {
 .smallhead {
 	font-size: 19px;
 	font-weight: 300;
-	line-height: 23px;
-	/* Museo */
+	line-height: 26px;
 }
 
 .note {

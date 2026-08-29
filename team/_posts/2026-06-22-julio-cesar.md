@@ -11,7 +11,7 @@ website:
 image: /images/team/julio-cesar.webp
 cv: 
 email: 
-alumni: false
+alumni: true
 ---
 I am a university student at El Centro Interdisciplinario de Ciencias de la Salud - Unidad Milpa Alta (CICS UMA) studying Nutrition. 
 I decided to attend the ENLACE program because I want to challenge myself so that in the future I can become a great nutritionist. 

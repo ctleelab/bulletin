@@ -4,7 +4,7 @@ title: Undergraduate research opportunities focusing on investigations of nuclea
 author: Christopher T. Lee
 image:
 link:
-job: true
+job: false
 ---
 
 

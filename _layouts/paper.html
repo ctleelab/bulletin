@@ -5,8 +5,8 @@ layout: default
 <div class="row">
 	<div class="col-lg-12">
 		{% if page.image %}
-		<img class="pull-left pad-right media-object d-none d-sm-block" alt="graphical abstract" src="{{ '/images/papers/' | append: page.image | relative_url }}">
-		<img width=85 class="float-left pad-right d-block d-sm-none" alt="graphical abstract" src="{{ '/images/papers/' | append: page.image | relative_url }}">
+		<img class="float-start pad-right media-object d-none d-sm-block" alt="graphical abstract" src="{{ '/images/papers/' | append: page.image | relative_url }}">
+		<img width=85 class="float-start pad-right d-block d-sm-none" alt="graphical abstract" src="{{ '/images/papers/' | append: page.image | relative_url }}">
 		{% endif %}
 		<div class="titlebox">
 			<div class="title">
@@ -34,7 +34,7 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa fa-file-text-o fa-fw"></i>
+				<i class="fa-regular fa-file-text fa-fw"></i>
 				<a class="off" href="{{ page.pdf }}">{{ page.pdf | split: '/' | last }}</a>
 			</div>
 			<div class="bigspacer"></div>
@@ -45,7 +45,7 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa fa-paperclip fa-fw"></i>
+				<i class="fa-regular fa-paperclip fa-fw"></i>
 				<a class="off" href="{{ page.supplement }}">{{ page.supplement | split: '/' | last }}</a>
 			</div>
 			<div class="bigspacer"></div>
@@ -56,12 +56,24 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa fa-external-link fa-fw"></i>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
 				<a class="off" href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
-			
+		
+			{% if page.pmcid %}
+			<div class="smallhead">
+				PubMed
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="ai ai-pubmed ai-fw"></i>
+				<a class="off" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC{{ page.pmcid }}">{{ page.pmcid }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
 			
 			{% if page.biorxiv %}
 			<div class="smallhead">
@@ -93,7 +105,7 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa fa-link fa-fw"></i>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
 				<a class="off" href="https://doi.org/{{ page.chemrxiv }}">{{ page.chemrxiv }}</a>
 			</div>
 			<div class="bigspacer"></div>
@@ -105,7 +117,7 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa fa-github-alt fa-fw"></i>
+				<i class="fa-brands fa-github-alt fa-fw"></i>
 				<a class="off" href="https://github.com/{{ page.github }}">{{ page.github | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
 			</div>
 			<div class="bigspacer"></div>
@@ -130,7 +142,7 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa fa-globe fa-fw"></i>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
 				<a class="off" href="{{ page.website }}">{{ page.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
 			</div>
 			<div class="bigspacer"></div>

@@ -2,7 +2,7 @@
     <div class="container">
         {% if page.categories.first != 'home' %}
         <a class="navbar-brand" href="{{ '/' | relative_url }}">
-            <img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" title="ctleelab logo" alt="ctleelab logo" src="{{ '/images/logo.svg' | relative_url }}">
+            <img class="logo navbar-brand d-inline-block align-top ms-0 me-1" title="ctleelab logo" alt="ctleelab logo" src="{{ '/images/logo.svg' | relative_url }}">
             ctleelab
         </a>
         {% else %}
@@ -12,7 +12,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-pills ml-auto">
+            <ul class="navbar-nav nav-pills ms-auto">
                 {% if page.categories.first == 'news' %}
                 <li class="nav-link active">
                 {% else %}
@@ -20,13 +20,6 @@
                 {% endif %}
                 <a class="mx-1" href="{{ '/news/' | relative_url }}">news</a>
                 </li>
-                <!-- {% if page.categories.first == 'blog' %}
-                <li class="nav-link active">
-                {% else %}
-                <li class="nav-link">
-                {% endif %}
-                <a class="mx-1" href="{{ '/blog/' | relative_url }}">blog</a>
-                </li> -->
                 {% if page.categories.first == 'papers' %}
                 <li class="nav-link active">
                 {% else %}
@@ -39,7 +32,7 @@
                 {% else %}
                 <li class="nav-link">
                 {% endif %}
-                <a class="mx-1" href="{{ '/projects/' | relative_url }}">projects</a></li>
+                <a class="mx-1" href="{{ '/projects/' | relative_url }}">codes</a></li>
                 {% if page.categories.first == 'team' %}
                 <li class="nav-link active">
                 {% else %}
