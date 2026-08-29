@@ -6,4 +6,4 @@ image:
 link:
 ---
 
-Woojung Kim, a PhD student in the [Chemistry and Biochemistry graduate program](https://chemistry.ucsd.edu/graduate-program/doctoral-program/index.html), starts a rotation in the lab!
+Woojung Kim, a PhD student in the Chemistry and Biochemistry graduate program, starts a rotation in the lab!
