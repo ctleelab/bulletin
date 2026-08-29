@@ -20,13 +20,6 @@
                 {% endif %}
                 <a class="mx-1" href="{{ '/news/' | relative_url }}">news</a>
                 </li>
-                <!-- {% if page.categories.first == 'blog' %}
-                <li class="nav-link active">
-                {% else %}
-                <li class="nav-link">
-                {% endif %}
-                <a class="mx-1" href="{{ '/blog/' | relative_url }}">blog</a>
-                </li> -->
                 {% if page.categories.first == 'papers' %}
                 <li class="nav-link active">
                 {% else %}
@@ -39,7 +32,7 @@
                 {% else %}
                 <li class="nav-link">
                 {% endif %}
-                <a class="mx-1" href="{{ '/projects/' | relative_url }}">projects</a></li>
+                <a class="mx-1" href="{{ '/projects/' | relative_url }}">codes</a></li>
                 {% if page.categories.first == 'team' %}
                 <li class="nav-link active">
                 {% else %}

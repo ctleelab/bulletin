@@ -3,7 +3,10 @@
 
 @import "custom";
 @import "bootstrap/bootstrap";
-$fa-font-path: "font";
-@import "font-awesome/font-awesome";
+$fa-font-path: "webfonts";
+@import "font-awesome/fontawesome";
+@import "font-awesome/regular";
+@import "font-awesome/solid";
+@import "font-awesome/brands";
 @import "katex";
 @import "solarized";
