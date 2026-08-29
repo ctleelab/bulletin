@@ -24,7 +24,13 @@ categories:
     				<img width=160 class="mr-3" alt="{{ member.title }}" src="{{ member.image | relative_url }}">
   				</a>
  			 	<div class="media-body">
-    				<div class="head mb-1"><a href="{{ member.url | relative_url }}" class="off">{{ member.title }}</a></div>
+    				<div class="head mb-1"><a href="{{ member.url | relative_url }}" class="off">
+						{% if member.preferred-name %}
+							{{ member.preferred-name }}
+						{% else %}
+							{{ member.title }}
+						{% endif %}
+						</a></div>
     				<p class="note">{{ member.position }}</p>
   				</div>
 			</div>
