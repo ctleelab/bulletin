@@ -82,7 +82,7 @@ categories:
 			{% for commit in project.commits %}
 				<div class="smallspacer"></div>
 				<li>
-					<i class="fa-solid fa-check-square-o fa-fw"></i>
+					<i class="fa-solid fa-square-check fa-fw"></i>
 					<a class="off" href="{{ commit.url }}">
 					{{ commit.date | date_to_string }} - <span class="text-gray">{{ commit.message | escape }}</span>
 					</a>
