@@ -51,7 +51,8 @@ task :test_html do
                   'http://eigen.tuxfamily.org/index.php?title=Main_Page',
                   'https://ctlee.github.io/casc',
                   'http://github.com/ctlee/casc/',
-                  'http://github.com/ctlee/gamer/'],
+                  'http://github.com/ctlee/gamer/',
+                  'https://fonts.googleapis.com/'],
     typhoeus: {
       followlocation: true,
       connecttimeout: 10,
