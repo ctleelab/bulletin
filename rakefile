@@ -53,7 +53,8 @@ task :test_html do
                   'http://github.com/ctlee/casc/',
                   'http://github.com/ctlee/gamer/',
                   'https://fonts.googleapis.com',
-                  'https://fonts.gstatic.com'],
+                  'https://fonts.gstatic.com',
+                  'https://github.com/ctleelab/organelle-competition-model'],
     typhoeus: {
       followlocation: true,
       connecttimeout: 10,
