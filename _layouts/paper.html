@@ -56,12 +56,24 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa-regular fa-external-link fa-fw"></i>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
 				<a class="off" href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
-			
+		
+			{% if page.pmcid %}
+			<div class="smallhead">
+				PubMed
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="ai ai-pubmed ai-fw"></i>
+				<a class="off" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC{{ page.pmcid }}">{{ page.pmcid }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			{% endif %}
+
 			
 			{% if page.biorxiv %}
 			<div class="smallhead">
@@ -93,7 +105,7 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa-regular fa-link fa-fw"></i>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
 				<a class="off" href="https://doi.org/{{ page.chemrxiv }}">{{ page.chemrxiv }}</a>
 			</div>
 			<div class="bigspacer"></div>
@@ -130,7 +142,7 @@ layout: default
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
-				<i class="fa-solid fa-globe fa-fw"></i>
+				<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
 				<a class="off" href="{{ page.website }}">{{ page.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
 			</div>
 			<div class="bigspacer"></div>

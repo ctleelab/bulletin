@@ -112,7 +112,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa-solid fa-globe fa-fw"></i>
+			<i class="fa-solid fa-arrow-up-right-from-square fa-fw"></i>
 			<a class="off" href="{{ member.website }}">{{ member.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
 		</div>
 		<div class="bigspacer"></div>
@@ -124,7 +124,7 @@ layout: default
 		</div>
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
-			<i class="fa-regular fa-inbox fa-fw"></i>
+			<i class="fa-regular fa-envelope fa-fw"></i>
 			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
 		</div>
 		<div class="bigspacer"></div>
