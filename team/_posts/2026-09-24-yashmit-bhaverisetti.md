@@ -8,7 +8,7 @@ github: yashmitb
 scholar: 
 orcid: 
 website: 
-image:
+image:/images/team/yashmit-bhaverisetti.webp
 cv: 
 email: ybhaverisetti@ucsd.edu
 alumni: false
