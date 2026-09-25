@@ -39,6 +39,8 @@ pub_mkdwn_template = Template(
     arxiv: $ARXIV
     chemrxiv: $CHEMRXIV
 
+    website: $WEBSITE
+    
     github: $GITHUB
     zenodo: $ZENODO
     

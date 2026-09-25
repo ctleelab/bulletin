@@ -168,7 +168,7 @@ layout: default
 		<ul>
 		{% for paper in site.categories.papers %}
 		{% if paper.authors contains searchstring %}
-		<li><a href="{{ paper.url | relative_url }}" class="off"><q>{{ paper.title }}</q>{{ paper.shortcite }}</a></li>
+		<li><a href="{{ paper.url | relative_url }}" class="off"><q>{{ paper.title }}</q> {{ paper.shortcite }}</a></li>
 		{% endif %}
 		{% endfor %}
 		</ul>
