@@ -9,7 +9,7 @@ github: rohanmjoshi025
 scholar: 
 orcid: 
 website: 
-image: 
+image:  /images/team/rohan-joshi.webp
 cv: 
 email: rmjoshi@ucsd.edu
 alumni: false
